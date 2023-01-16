@@ -7,6 +7,7 @@ export interface MiladyType {
   description: string;
   chainId: number;
   image: string
+  volume: number;
 }
 
 
@@ -23,7 +24,7 @@ const useMiladys = () => {
     getMiladys();
   }, []);
 
-  return miladys;
+  return miladys?.sort((a, b) => b.volume - a.volume);
 };
 
 export default useMiladys;
