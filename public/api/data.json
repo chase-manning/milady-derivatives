@@ -1,5 +1,15 @@
 [
   {
+    "id": "mimany",
+    "name": "Mimany",
+    "openseaId": "mimany",
+    "description": "Mimany represents a new paradigm in 21st century art. It transcends conventional definitions and labels. It sits at the intersection of traditional, hand crafted, art and the digital renaissance of NFTs. Mimany is art, first and foremost. Mimany is an NFT, by choice. But beyond that, Mimany is an identity forged of a human being's experience within a fully interconnected digital world, unconstrained by the boundaries of physical forces. Mimany is exclusively inclusive. Mimany is you.",
+    "chainId": 1,
+    "volume": 0,
+    "image": "/api/images/mimany.jpeg",
+    "website": "https://mimany.me/"
+  },
+  {
     "id": "philady",
     "name": "Philady Maker (Milady flipped to the left)",
     "openseaId": "philady",
