@@ -60,7 +60,7 @@
     "description": "AI + Milady. Made using disco diffusion v5.2",
     "chainId": 1,
     "volume": 15,
-    "image": "/api/images/milaidymaker.webp"
+    "image": "/api/images/milaidymaker.avif"
   },
   {
     "id": "streetsofmilady",
