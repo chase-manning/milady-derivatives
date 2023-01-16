@@ -13,6 +13,22 @@ const StyledApp = styled.div`
   padding: 4rem;
 `
 
+
+const Text = styled.div`
+  font-size: 1.6rem;
+  font-weight: 400;
+  background: white;
+`
+
+const Link = styled.a`
+  font-size: 1.6rem;
+  font-weight: 400;
+  background: white;
+  color: #0000FF;
+  text-decoration: underline;
+`
+
+
 const Miladys = styled.div`
   width: 100%;
   padding: 6rem;
@@ -26,11 +42,13 @@ function App() {
 
   return (
     <StyledApp>
-      <TextArea header="Milady Derivatives" body="An unofficial collection of Milady Derivatives maintained by the community. To add or update a derivative please view the contribution guide." />
+      <TextArea header="Milady Derivatives" body={
+        <Text>
+          An unofficial collection of Milady Derivatives maintained by the community. To add or update a derivative please view the <Link href="https://github.com/chase-manning/milady-derivatives/blob/main/.github/CONTRIBUTING.md" target="_blank" >contribution guide.</Link> Feel free to use <Link href="https://miladyderivatives.com/api/data.json" target="_blank" >our open API</Link>.</Text>} />
       <Miladys>
         {
           miladys && miladys.map(milady => {
-            return <Milady milady={milady} />
+            return <Milady key={milady.id} milady={milady} />
           })
         }
       </Miladys>
