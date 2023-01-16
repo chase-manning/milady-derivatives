@@ -50,8 +50,11 @@ interface Props {
 }
 
 const Milady = ({ milady }: Props) => {
+  let link = `https://opensea.io/collection/${milady.openseaId}`;
+  if (milady.website) link = milady.website;
+
   return (
-    <StyledMilady href={`https://opensea.io/collection/${milady.openseaId}`} target="_blank">
+    <StyledMilady href={link} target="_blank">
       <ImageContainer>
         <Image src={milady.image} />
       </ImageContainer>

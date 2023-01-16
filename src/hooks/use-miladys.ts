@@ -8,6 +8,7 @@ export interface MiladyType {
   chainId: number;
   image: string
   volume: number;
+  website?: string;
 }
 
 
