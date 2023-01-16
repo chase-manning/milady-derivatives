@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledTextArea = styled.div`
-  width: 60rem;  
+  width: 65rem;  
 `
 
 const Header = styled.div`
