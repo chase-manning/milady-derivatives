@@ -359,5 +359,14 @@
     "chainId": 1,
     "volume": 1.27,
     "image": "/api/images/basedmiladymaker.avif"
+  },
+  {
+    "id": "miladycolombia",
+    "openseaId": "miladycolombia",
+    "name": "Milady Colombia",
+    "description": "Milady Colombia Maker is a collection of 1000 generative pfpNFT's in a neocolombian aesthetic inspired by barrio style tribes.",
+    "chainId": 1,
+    "volume": 0,
+    "image": "/api/images/miladycolombia.avif"
   }
 ]
