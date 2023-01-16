@@ -10,7 +10,7 @@ const StyledApp = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem;
+  padding: 6rem;
 `
 
 
@@ -33,7 +33,7 @@ const Miladys = styled.div`
   width: 100%;
   padding: 6rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 2rem;
 `
 
