@@ -11,9 +11,18 @@ const StyledMilady = styled.div`
   align-items: center;
 `;
 
-const Image = styled.img`
+const ImageContainer = styled.div`
   width: 100%;
+  flex: 1;
   padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+const Image = styled.img`
+  max-width: 100%;
+  max-height: 100%;
 `
 
 const Label = styled.div`
@@ -36,7 +45,9 @@ interface Props {
 const Milady = ({ milady }: Props) => {
   return (
     <StyledMilady>
-      <Image src={milady.image} />
+      <ImageContainer>
+        <Image src={milady.image} />
+      </ImageContainer>
       <Label>{milady.name}</Label>
     </StyledMilady>
   );
