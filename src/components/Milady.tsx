@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { MiladyType } from "../hooks/use-miladys";
 
-const StyledMilady = styled.div`
+const StyledMilady = styled.a`
   width: 100%;
   height: 100%;
   border: solid 1px var(--primary);
@@ -9,6 +9,13 @@ const StyledMilady = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
+
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+  :hover {
+    transform: scale(1.05);
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -44,7 +51,7 @@ interface Props {
 
 const Milady = ({ milady }: Props) => {
   return (
-    <StyledMilady>
+    <StyledMilady href={`https://opensea.io/collection/${milady.openseaId}`} target="_blank">
       <ImageContainer>
         <Image src={milady.image} />
       </ImageContainer>
