@@ -11,6 +11,10 @@ const StyledApp = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 6rem;
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+  }
 `
 
 
@@ -35,6 +39,11 @@ const Miladys = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 2rem;
+
+
+  @media (max-width: 768px) {
+    padding: 2rem 0;
+  }
 `
 
 function App() {

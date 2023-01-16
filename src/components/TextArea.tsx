@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 const StyledTextArea = styled.div`
   width: 65rem;  
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 const Header = styled.div`
