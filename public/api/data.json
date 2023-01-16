@@ -368,5 +368,14 @@
     "chainId": 1,
     "volume": 0,
     "image": "/api/images/miladycolombia.avif"
+  },
+  {
+    "id": "mifella",
+    "openseaId": "mifella",
+    "name": "MiFella",
+    "description": "MiFella is about Milady.",
+    "volume": 4.4695,
+    "chainId": 420,
+    "image": "/api/images/mifella.avif"
   }
 ]
