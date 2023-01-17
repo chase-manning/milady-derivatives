@@ -32,6 +32,11 @@ const Image = styled.img`
   max-height: 100%;
 `
 
+const Video = styled.video`
+  max-width: 100%;
+  max-height: 100%;
+`
+
 const Label = styled.div`
   width: 100%;
   background: var(--secondary);
@@ -56,7 +61,10 @@ const Milady = ({ milady }: Props) => {
   return (
     <StyledMilady href={link} target="_blank">
       <ImageContainer>
-        <Image src={milady.image} />
+        {
+          milady.image.endsWith(".mp4") ?
+            <Video autoPlay loop muted src={milady.image} /> : <Image src={milady.image} />
+        }
       </ImageContainer>
       <Label>{milady.name}</Label>
     </StyledMilady>
