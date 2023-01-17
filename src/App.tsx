@@ -53,7 +53,7 @@ function App() {
     <StyledApp>
       <TextArea header="Milady Derivatives" body={
         <Text>
-          An unofficial list of Milady Derivatives maintained by the community. To add or update a derivative please view the <Link href="https://github.com/chase-manning/milady-derivatives/blob/main/.github/CONTRIBUTING.md" target="_blank" >contribution guide.</Link> Feel free to use <Link href="https://miladyderivatives.com/api/data.json" target="_blank" >our open API</Link>.</Text>} />
+          An unofficial list of Milady Derivatives maintained by the community. To add or update a derivative please view the <Link href="https://github.com/chase-manning/milady-derivatives/blob/main/.github/CONTRIBUTING.md" target="_blank" >contribution guide</Link>. Feel free to use <Link href="https://miladyderivatives.com/api/data.json" target="_blank" >our open API</Link>.</Text>} />
       <Miladys>
         {
           miladys && miladys.map(milady => {
