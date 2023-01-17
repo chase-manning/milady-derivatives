@@ -377,5 +377,114 @@
     "volume": 4.4695,
     "chainId": 420,
     "image": "/api/images/mifella.avif"
+  },
+  {
+    "id": "mccustoms",
+    "openseaId": "mccustoms",
+    "name": "McCustoms",
+    "description": "custom 1/1 Miladys for McLady holders, on chain!",
+    "volume": 0,
+    "chainId": 1,
+    "image": "/api/images/McCustoms.avif"
+  },
+  {
+    "id": "pixeladieseth",
+    "openseaId": "pixeladieseth",
+    "name": "Pixeladies.eth",
+    "description": "333 Hand Crafted Pixeladies - Each Unique Named Milady Includes Equipment Class and Background",
+    "volume": 0,
+    "chainId": 1,
+    "image": "/api/images/Pixeladies-eth.png"
+  },
+  {
+    "id": "kardlady",
+    "openseaId": "kardlady",
+    "name": "KARDLADY",
+    "description": "FIRST KUSTOM NFT ON DEMAND 💞KARDLADY HANDRCRAFT SERIES BY KARDLADY STUDIOS 💕 KARDLADY 1000 LIMITED COLLECTION",
+    "volume": 0,
+    "chainId": 1,
+    "image": "/api/images/Kardlady.mp4"
+  },
+  {
+    "id": "radbro",
+    "openseaId": "radbro",
+    "name": "radbro",
+    "description": "Welcome to the home of radbro on OpenSea. Discover the best items in this collection.",
+    "volume": 0.0602,
+    "chainId": 137,
+    "image": "/api/images/Radbro.avif"
+  },
+  {
+    "id": "miladybitch",
+    "openseaId": "miladybitch",
+    "name": "Milady, that B.I.T.C.H",
+    "description": "Welcome to the home of Milady, That B.I.T.C.H. on OpenSea. Discover the best items in this collection.",
+    "volume": 125.9044,
+    "chainId": 1,
+    "image": "/api/images/Milady-That-bitch.avif"
+  },
+  {
+    "id": "rainbow-zorblady-maker",
+    "openseaId": "rainbow-zorblady-maker",
+    "name": "Rainbow Zorblady Maker",
+    "description": "Zorblady",
+    "volume": 0.0493,
+    "chainId": 1,
+    "image": "/api/images/Rainbow-Zorblady-Maker.avif"
+  },
+  {
+    "id": "milady-rainbow-zorb",
+    "openseaId": "milady-rainbow-zorb",
+    "name": "Milady Rainbow Zorb",
+    "description": "5% of free is free",
+    "volume": 0.019,
+    "chainId": 1,
+    "image": "/api/images/Milady-Rainbow-Zorb.avif"
+  },
+  {
+    "id": "oekakimaker",
+    "openseaId": "oekakimaker",
+    "name": "Oekaki Maker",
+    "description": "Neo-chibi aesthetic enthusiast network cohesion lainpilled artisanal AI generative synthesis NFTS.",
+    "volume": 0,
+    "chainId": 1,
+    "image": "/api/images/OekakiMaker.jfif"
+  },
+  {
+    "id": "godsremix",
+    "openseaId": "godsremix",
+    "name": "God's Remix",
+    "description": "Welcome to the home of God's Remix on OpenSea. Discover the best items in this collection.",
+    "volume": 15.9326,
+    "chainId": 1,
+    "image": "/api/images/GodsRemix.avif"
+  },
+  {
+    "id": "beetle-games",
+    "openseaId": "beetle-games",
+    "name": "BEETLE GAMES",
+    "description": "BEETLE GAME. BEETLE GAME. BEETLE GAME. BEETLE GAME. BEETLE GAME.",
+    "volume": 0,
+    "chainId": 1,
+    "image": "/api/images/MiBeetles.avif"
+  },
+  {
+    "id": "yona-honorary-service",
+    "openseaId": "yona-honorary-service",
+    "name": "Yona Honorary Service",
+    "description": "1/1 hand-drawn edits by Yona!",
+    "volume": 0,
+    "chainId": 1,
+    "image": "/api/images/YonaHonoraryService.avif"
+  },
+  {
+    "id": "baseddomany",
+    "openseaId": "baseddomany",
+    "name": "Based Domany",
+    "description": "Based Domany is the first Mimany Derivative made by @Based_d0m | they look like shit but so do most other nfts",
+    "volume": 0,
+    "chainId": 1,
+    "image": "/api/images/Baseddomany.jfif"
   }
+  
 ]
