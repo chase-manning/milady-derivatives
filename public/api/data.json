@@ -487,7 +487,7 @@
     "chainId": 1,
     "image": "/api/images/Baseddomany.jfif",
     "website": "https://twitter.com/BasedDomany"
-  }
+  },
   {
     "id": "milady2",
     "name": "Milady 2: Global Terror",
@@ -496,5 +496,5 @@
     "chainId": 1,
     "volume": 0,
     "image": "/api/images/milady2.png"
-  },
+  }
 ]
