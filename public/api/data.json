@@ -488,4 +488,13 @@
     "image": "/api/images/Baseddomany.jfif",
     "website": "https://twitter.com/BasedDomany"
   }
+  {
+    "id": "milady2",
+    "name": "Milady 2: Global Terror",
+    "openseaId": "milady-2-global-terror",
+    "description": "I need you to defeat terror right now -Milady",
+    "chainId": 1,
+    "volume": 0,
+    "image": "/api/images/milady2.png"
+  },
 ]
