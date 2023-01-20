@@ -396,6 +396,15 @@
     "volume": 0,
     "chainId": 1,
     "image": "/api/images/Pixeladies-eth.png"
+  },  
+  {
+    "id": "dollady",
+    "openseaId": "dollady",
+    "name": "DOLLADY",
+    "description": "777 heavenly curated neochibi dolls.",
+    "volume": 0,
+    "chainId": 1,
+    "image": "/api/images/DOLLADY.mp4"
   },
   {
     "id": "kardlady",
