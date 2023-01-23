@@ -505,5 +505,14 @@
     "chainId": 1,
     "volume": 0,
     "image": "/api/images/milady2.png"
+  },
+  {
+    "id": "oekakimaker",
+    "openseaId": "oekakimaker",
+    "name": "Oekaki Maker",
+    "description": "Neo-chibi aesthetic enthusiast network cohesion lainpilled artisanal AI generative synthesis NFTS.",
+    "chainId": 1,
+    "volume": 1.62,
+    "image": "/api/images/oekakimaker.avif"
   }
 ]
