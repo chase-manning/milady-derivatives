@@ -514,5 +514,14 @@
     "chainId": 1,
     "volume": 1.62,
     "image": "/api/images/oekakimaker.avif"
+  },
+  {
+    "id": "cogawrettes",
+    "openseaId": "cogawrettes",
+    "name": "Cogawrettes",
+    "description": "18th century neo-machine aesthetic",
+    "chainId": 137,
+    "volume": 0,
+    "image": "/api/images/cogawrettes.avif"
   }
 ]
