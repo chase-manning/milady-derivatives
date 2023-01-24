@@ -452,15 +452,6 @@
     "image": "/api/images/Milady-Rainbow-Zorb.avif"
   },
   {
-    "id": "oekakimaker",
-    "openseaId": "oekakimaker",
-    "name": "Oekaki Maker",
-    "description": "Neo-chibi aesthetic enthusiast network cohesion lainpilled artisanal AI generative synthesis NFTS.",
-    "volume": 0,
-    "chainId": 1,
-    "image": "/api/images/OekakiMaker.jfif"
-  },
-  {
     "id": "godsremix",
     "openseaId": "godsremix",
     "name": "God's Remix",
