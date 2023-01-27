@@ -1,15 +1,5 @@
 [
   {
-    "id": "mimany",
-    "name": "Mimany",
-    "openseaId": "mimany",
-    "description": "Mimany represents a new paradigm in 21st century art. It transcends conventional definitions and labels. It sits at the intersection of traditional, hand crafted, art and the digital renaissance of NFTs. Mimany is art, first and foremost. Mimany is an NFT, by choice. But beyond that, Mimany is an identity forged of a human being's experience within a fully interconnected digital world, unconstrained by the boundaries of physical forces. Mimany is exclusively inclusive. Mimany is you.",
-    "chainId": 1,
-    "volume": 0,
-    "image": "/api/images/mimany.jpeg",
-    "website": "https://mimany.me/"
-  },
-  {
     "id": "philady",
     "name": "Philady Maker (Milady flipped to the left)",
     "openseaId": "philady",
@@ -451,15 +441,6 @@
     "image": "/api/images/Milady-Rainbow-Zorb.avif"
   },
   {
-    "id": "godsremix",
-    "openseaId": "godsremix",
-    "name": "God's Remix",
-    "description": "Welcome to the home of God's Remix on OpenSea. Discover the best items in this collection.",
-    "volume": 15.9326,
-    "chainId": 1,
-    "image": "/api/images/GodsRemix.avif"
-  },
-  {
     "id": "beetle-games",
     "openseaId": "beetle-games",
     "name": "BEETLE GAMES",
@@ -476,16 +457,6 @@
     "volume": 0,
     "chainId": 1,
     "image": "/api/images/YonaHonoraryService.avif"
-  },
-  {
-    "id": "baseddomany",
-    "openseaId": "baseddomany",
-    "name": "Based Domany",
-    "description": "Based Domany is the first Mimany Derivative made by @Based_d0m | they look like shit but so do most other nfts",
-    "volume": 0,
-    "chainId": 1,
-    "image": "/api/images/Baseddomany.jfif",
-    "website": "https://twitter.com/BasedDomany"
   },
   {
     "id": "milady2",
@@ -513,5 +484,14 @@
     "chainId": 137,
     "volume": 0,
     "image": "/api/images/cogawrettes.avif"
+  },
+  {
+    "id": "sudo-bastard-miladys",
+    "openseaId": "sudo-bastard-miladys",
+    "name": "Sudo Bastard Miladys",
+    "description": "Bastardized, Zombified and Shadow Realm sudo-Miladys. Milady Punk PFP!! Gggrrrrrrrr",
+    "chainId": 1,
+    "volume": 0,
+    "image": "/api/images/sudo-bastard-miladys.avif"
   }
 ]
