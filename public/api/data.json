@@ -502,5 +502,14 @@
     "chainId": 1,
     "volume": 0,
     "image": "/api/images/remilio64.avif"
+  },
+  {
+    "id": "meowlady-maker",
+    "openseaId": "meowlady-maker",
+    "name": "Meowlady Maker",
+    "description": "Meowlady Maker is a collection of generative cat pfpNFT's in a neochibi aesthetic inspired by @MILADYMAKERby",
+    "chainId": 1,
+    "volume": 0,
+    "image": "/api/images/meowlady-maker.avif"
   }
 ]
