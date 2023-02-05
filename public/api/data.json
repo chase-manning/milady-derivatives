@@ -511,5 +511,14 @@
     "chainId": 1,
     "volume": 0,
     "image": "/api/images/meowlady-maker.avif"
+  },
+  {
+    "id": "midenza-maker",
+    "openseaId": "midenza-maker",
+    "name": "Midenza Maker",
+    "description": "Everytime i look at fidenza i see the eyes its in my head i love it i love it in my head everytime i love it the eyes the eyes <3",
+    "chainId": 1,
+    "volume": 0,
+    "image": "/api/images/midenza-maker.avif"
   }
 ]
