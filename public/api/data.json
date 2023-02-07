@@ -520,5 +520,14 @@
     "chainId": 1,
     "volume": 0,
     "image": "/api/images/midenza-maker.avif"
+  },
+  {
+    "id": "zladymaker",
+    "openseaId": "zladymaker",
+    "name": "Zlady Maker",
+    "description": "Zlady Maker is a collection of 151 of the strongest fighters the universe has ever seen.",
+    "chainId": 1,
+    "volume": 0,
+    "image": "/api/images/zladymaker.avif"
   }
 ]
