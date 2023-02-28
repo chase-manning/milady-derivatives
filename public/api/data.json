@@ -529,5 +529,14 @@
     "chainId": 1,
     "volume": 0,
     "image": "/api/images/zladymaker.avif"
+  },
+  {
+    "id": "mifairy-maker",
+    "openseaId": "mifairy-maker",
+    "name": "Mifairy Maker",
+    "description": "Mifairy Maker is a collection of 3333 ethereal hand drawn generative pfpNFT's in a dreamy neochibi aesthetic.",
+    "chainId": 1,
+    "volume": 0.025,
+    "image": "/api/images/mifairy-maker.avif"
   }
 ]
