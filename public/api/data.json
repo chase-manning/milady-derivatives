@@ -537,7 +537,6 @@
     "description": "Mifairy Maker is a collection of 3333 ethereal hand drawn generative pfpNFT's in a dreamy neochibi aesthetic.",
     "chainId": 1,
     "volume": 0.025,
-    "image": "/api/images/mifairy-maker.avif",
-    "website": "https://scatter.art/collection/0x67B5eE6e29a4230177Dda07AD7848e42d89cF9a0?tab=mint&ref=63fe020585d2141838b20c71"
+    "image": "/api/images/mifairy-maker.avif"
   }
 ]
