@@ -538,5 +538,23 @@
     "chainId": 1,
     "volume": 0.025,
     "image": "/api/images/mifairy-maker.avif"
+  },
+  {
+    "id": "r3dbro",
+    "openseaId": "r3dbro",
+    "name": "R3DBRO",
+    "description": "R3DBRO RADBRO REMILIO MILADY OFFICIAL OPENSEA RAD ZYLLAMINTING",
+    "chainId": 1,
+    "volume": 0,
+    "image": "/api/images/r3dbro.avif"
+  },
+  {
+    "id": "midevil",
+    "openseaId": "midevil",
+    "name": "my little devil",
+    "description": "444 AI generated 3d chibi collection",
+    "chainId": 1,
+    "volume": 0.0126,
+    "image": "/api/images/midevil.avif"
   }
 ]
