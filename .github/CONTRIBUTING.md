@@ -9,4 +9,3 @@ General improvements and other changes are also welcome.
 - Fork the Milady Derivates repo
 - Make your changes (It's likely you will want to edit [this file](https://github.com/chase-manning/milady-derivatives/blob/main/public/api/data.json))
 - Open a PR to merge the changes back into the main repo.
-
