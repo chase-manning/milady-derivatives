@@ -556,5 +556,14 @@
     "chainId": 1,
     "volume": 0.0126,
     "image": "/api/images/midevil.avif"
+  },
+  {
+    "id": "schizoposters",
+    "openseaId": "schizoposters",
+    "name": "SchizoPosters",
+    "description": "I HATE THE ANTICHRIST I HATE THE ANTICHRIST I HATE THE ANTICHRIST I HATE THE ANTICHRIST",
+    "chainId": 1,
+    "volume": 158,
+    "image": "/api/images/schizoposters.avif"
   }
 ]
