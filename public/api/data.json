@@ -395,6 +395,15 @@
     "chainId": 1,
     "image": "/api/images/Pixeladies-eth.png"
   },
+    {
+    "id": "Ascii Miladies",
+    "openseaId": "ascii-milady-2",
+    "name": "Ascii Miladies",
+    "description": "ゆっくりしてね",
+    "volume": 0,
+    "chainId": 1,
+    "image": "/api/images/asciimiladies.png"
+  },
   {
     "id": "dollady",
     "openseaId": "dollady",
