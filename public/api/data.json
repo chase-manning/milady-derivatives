@@ -494,6 +494,15 @@
     "volume": 0,
     "image": "/api/images/cogawrettes.avif"
   },
+   {
+    "id": "cogawrettesVSA",
+    "openseaId": "cogawrettesatelier",
+    "name": "Cogawrettes: VonnegutSaves' Atelier",
+    "description": "VonnegutSaves' Atelier, a side collection of a micro collection in the neo-machine aesthetic of 18th century factories. ",
+    "chainId": 137,
+    "volume": 0,
+    "image": "/api/images/cogawrettesVSA.avif"
+  },
   {
     "id": "sudo-bastard-miladys",
     "openseaId": "sudo-bastard-miladys",
