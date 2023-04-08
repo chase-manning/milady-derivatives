@@ -494,6 +494,15 @@
     "volume": 1.62,
     "image": "/api/images/oekakimaker.avif"
   },
+    {
+    "id": "miladycola",
+    "openseaId": "miladycola",
+    "name": "MiladyCola",
+    "description": "The MiladyCola bottles come in multiple flavors that nod to loveable milady derivatives",
+    "chainId": 1,
+    "volume": 0,
+    "image": "/api/images/miladycola.jpeg"
+  },
   {
     "id": "cogawrettes",
     "openseaId": "cogawrettes",
