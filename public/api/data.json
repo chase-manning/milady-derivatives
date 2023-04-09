@@ -395,6 +395,15 @@
     "chainId": 1,
     "image": "/api/images/Pixeladies-eth.png"
   },
+    {
+    "id": "Ascii Miladies",
+    "openseaId": "ascii-milady-2",
+    "name": "Ascii Miladies",
+    "description": "ゆっくりしてね",
+    "volume": 0,
+    "chainId": 1,
+    "image": "/api/images/asciimiladies.png"
+  },
   {
     "id": "dollady",
     "openseaId": "dollady",
@@ -484,6 +493,24 @@
     "chainId": 1,
     "volume": 1.62,
     "image": "/api/images/oekakimaker.avif"
+  },
+  {
+    "id": "lawbsters",
+    "openseaId": "lawbsters",
+    "name": "lawbsters",
+    "description": "Lawbsters seem nice but a human run by a lobster will never achieve anything without a roadmap. ",
+    "chainId": 1,
+    "volume": 0,
+    "image": "/api/images/lawbsters.jpeg"
+  },
+    {
+    "id": "miladycola",
+    "openseaId": "miladycola",
+    "name": "MiladyCola",
+    "description": "The MiladyCola bottles come in multiple flavors that nod to loveable milady derivatives",
+    "chainId": 1,
+    "volume": 0,
+    "image": "/api/images/miladycola.jpeg"
   },
   {
     "id": "cogawrettes",
