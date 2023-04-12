@@ -610,5 +610,14 @@
     "chainId": 1,
     "volume": 158,
     "image": "/api/images/schizoposters.avif"
+  },
+  {
+    "id": "veryinternetperson",
+    "openseaId": "veryinternetperson",
+    "name": "Very Internet Person",
+    "description": "Neochibi aesthetic pixel goool icons/avatars for going online and having fun.",
+    "chainId": 1,
+    "volume": 0.3005,
+    "image": "/api/images/vip.png"
   }
 ]
