@@ -396,6 +396,15 @@
     "image": "/api/images/Pixeladies-eth.png"
   },
     {
+    "id": "roritamaker",
+    "openseaId": "roritamaker",
+    "name": "Rorita Maker",
+    "description": "Rorita Maker ロリータ neochibi aesthetic pfpNFTs. Inspired by Milady Maker",
+    "volume": 0,
+    "chainId": 1,
+    "image": "/api/images/roritamaker.jpeg"
+  },
+    {
     "id": "Ascii Miladies",
     "openseaId": "ascii-milady-2",
     "name": "Ascii Miladies",
