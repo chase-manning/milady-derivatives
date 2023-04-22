@@ -395,7 +395,7 @@
     "chainId": 1,
     "image": "/api/images/Pixeladies-eth.png"
   },
-    {
+  {
     "id": "roritamaker",
     "openseaId": "roritamaker",
     "name": "Rorita Maker",
@@ -404,7 +404,7 @@
     "chainId": 1,
     "image": "/api/images/roritamaker.jpeg"
   },
-    {
+  {
     "id": "Ascii Miladies",
     "openseaId": "ascii-milady-2",
     "name": "Ascii Miladies",
@@ -512,7 +512,7 @@
     "volume": 0,
     "image": "/api/images/lawbsters.jpeg"
   },
-    {
+  {
     "id": "miladycola",
     "openseaId": "miladycola",
     "name": "MiladyCola",
@@ -530,7 +530,7 @@
     "volume": 0,
     "image": "/api/images/cogawrettes.avif"
   },
-   {
+  {
     "id": "cogawrettesVSA",
     "openseaId": "cogawrettesatelier",
     "name": "Cogawrettes: VonnegutSaves' Atelier",
@@ -628,5 +628,14 @@
     "chainId": 1,
     "volume": 0.3005,
     "image": "/api/images/vip.png"
+  },
+  {
+    "id": "milady-aura-petz",
+    "openseaId": "milady-aura-petz",
+    "name": "milady aura petz",
+    "description": "1888 petz for your milady aura",
+    "chainId": 1,
+    "volume": 9.281,
+    "image": "/api/images/milady-aura-petz.avif"
   }
 ]
