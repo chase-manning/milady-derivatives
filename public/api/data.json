@@ -41,7 +41,7 @@
     "openseaId": "miladyaura",
     "description": "Deconstructive, derivative collection of 1888 milady auras",
     "chainId": 1,
-    "volume": 160,
+    "volume": 187,
     "image": "/api/images/miladyaura.avif"
   },
   {
@@ -50,7 +50,7 @@
     "openseaId": "spring-miaura",
     "description": "Charged spirits of the network garden, a collection of 333 spring miauras",
     "chainId": 1,
-    "volume": 8,
+    "volume": 13,
     "image": "/api/images/spring-miaura.avif"
   },
   {
@@ -59,7 +59,7 @@
     "openseaId": "milaidymaker",
     "description": "AI + Milady. Made using disco diffusion v5.2",
     "chainId": 1,
-    "volume": 15,
+    "volume": 16,
     "image": "/api/images/milaidymaker.avif"
   },
   {
@@ -68,7 +68,7 @@
     "openseaId": "streetsofmilady",
     "description": "Rage in the Streets of Milady!",
     "chainId": 1,
-    "volume": 3,
+    "volume": 16,
     "image": "/api/images/streetsofmilady.webp"
   },
   {
@@ -77,7 +77,7 @@
     "openseaId": "azuki-milady",
     "description": "Azuki Milady is a collection of 6,666 generative avatars in a neodrip aesthetic inspired by two different sets of street style tribes.",
     "chainId": 1,
-    "volume": 0.5727,
+    "volume": 0.7727,
     "image": "/api/images/azuki-milady.avif"
   },
   {
@@ -95,7 +95,7 @@
     "name": "Pixel Miladies",
     "description": "Pixel Miladies",
     "chainId": 1,
-    "volume": 0.1891,
+    "volume": 0.22,
     "image": "/api/images/pixel-miladies.png"
   },
   {
@@ -122,7 +122,7 @@
     "name": "Banners NFT",
     "description": "Banners is a generative NFT collection exploring a hypercitation of early 00's digital aesthetics with content organically sourced from performative posts made within the Milady Maker community.",
     "chainId": 1,
-    "volume": 87,
+    "volume": 206,
     "image": "/api/images/banners-nft.avif"
   },
   {
@@ -131,7 +131,7 @@
     "name": "Bored Milady Maker",
     "description": "Bored Milady Maker is a collection of 6,911 generative pfpNFT's in a neochibi aesthetic inspired by street style tribes that infected the apes with Network Spirituality.",
     "chainId": 1,
-    "volume": 134,
+    "volume": 137,
     "image": "/api/images/boredmilady.avif"
   },
   {
@@ -149,7 +149,7 @@
     "name": "Cigawrette Packs",
     "description": "An experimental literature project of 9999 NFTs exploring the space between PFP and utility.",
     "chainId": 1,
-    "volume": 1.893,
+    "volume": 7,
     "image": "/api/images/cigawrettepacks.avif"
   },
   {
@@ -158,7 +158,7 @@
     "name": "Pixelady Maker",
     "description": "Pixelady Maker is a collection of 10000 generative pixel art pfpNFT's in a neochibi aesthetic inspired by Milady Maker.",
     "chainId": 1,
-    "volume": 19.3,
+    "volume": 170,
     "image": "/api/images/pixeladymaker.png"
   },
   {
@@ -176,7 +176,7 @@
     "name": "Pixelady Maker WOTLK",
     "description": "Pixelady Maker WOTLK is an expansion set of reanimated pixel art pfpNFT's in a winter aesthetic.",
     "chainId": 1,
-    "volume": 1.64,
+    "volume": 10,
     "image": "/api/images/pixeladymaker-wotlk.png"
   },
   {
@@ -185,7 +185,7 @@
     "name": "Pixelady Maker: Radbro",
     "description": "Pixelady Maker: Radbro is a collection of generative pixel art bros in a rad aesthetic inspired by Radbro Webring.",
     "chainId": 1,
-    "volume": 0.05,
+    "volume": 1,
     "image": "/api/images/pixeladymaker-radbro.avif"
   },
   {
@@ -194,7 +194,7 @@
     "name": "Milady Maker X LITE",
     "description": "Milady Maker X is a collection of 1000 generative next-gen Avatars in a neochibi and netcore aesthetic.",
     "chainId": 1,
-    "volume": 1.5929,
+    "volume": 3,
     "image": "/api/images/milady-maker-x-lite.avif"
   },
   {
@@ -203,7 +203,7 @@
     "name": "Redacted Remilio Babies",
     "description": "Redacted Remilio Babies is a collection of 10,000 neochibi pfpNFT's expanding the Milady Maker paradigm with the introduction of young J.I.T. energy and schizophrenic reactionary aesthetics.",
     "chainId": 1,
-    "volume": 70.29,
+    "volume": 3293,
     "image": "/api/images/remilio-babies.avif"
   },
   {
@@ -212,7 +212,7 @@
     "name": "MiladyRave",
     "description": "milady rave maker is a collection of 5,000 generative pfp nft's in a neochibi aesthetic inspired by the milady rave.",
     "chainId": 1,
-    "volume": 2.02,
+    "volume": 3,
     "image": "/api/images/miladyrave.avif"
   },
   {
@@ -221,7 +221,7 @@
     "name": "milady mfers",
     "description": "milady mfers is is a collection of 10,000 generative mfers in a neochibi aesthetic inspired by tokyo street style tribes.",
     "chainId": 1,
-    "volume": 0.556,
+    "volume": 0.74,
     "image": "/api/images/milady-mfers.avif"
   },
   {
@@ -230,7 +230,7 @@
     "name": "Sonora Maker",
     "description": "Sonora Maker is a collection of 444 generative pfpNFTs in a neochibi aesthetic.",
     "chainId": 1,
-    "volume": 5.13,
+    "volume": 7,
     "image": "/api/images/sonoramaker.avif"
   },
   {
@@ -239,7 +239,7 @@
     "name": "Sonora, That B.I.T.C.H.",
     "description": "Sonora, That B.I.T.C.H.",
     "chainId": 1,
-    "volume": 0.8745,
+    "volume": 0.9745,
     "image": "/api/images/sonora222.avif"
   },
   {
@@ -248,7 +248,7 @@
     "name": "Radbro Webring",
     "description": "Radbros on chain. Just tell 'em to check the chain.",
     "chainId": 1,
-    "volume": 23.49,
+    "volume": 195,
     "image": "/api/images/radbro-webring.avif"
   },
   {
@@ -257,7 +257,7 @@
     "name": "Matrix Milady",
     "description": "Matrix Milady is a collection of 1,337 generative pfpNFT's that are generated by terraforming data processesing pipelines, to maximize neochibi cuteness.",
     "chainId": 1,
-    "volume": 0.05,
+    "volume": 2,
     "image": "/api/images/matrix-milady.jpg"
   },
   {
@@ -266,7 +266,7 @@
     "name": "Ghiblady Maker",
     "description": "Ghiblady Maker is a collection of 10,000 lovepilled AI generative pfpNFTs with inspiration from Milady, Pixelady, and other Milady inspired projects.",
     "chainId": 1,
-    "volume": 33.93,
+    "volume": 44,
     "image": "/api/images/ghibladymaker.avif"
   },
   {
@@ -284,7 +284,7 @@
     "name": "MiladyStation",
     "description": "MiladyStation is a retro game console with an obscure discography containing a collection of 1,212 AI generated player characters with inspiration from Milady, Cigawrettes, Pixelady, and Ghiblady.",
     "chainId": 1,
-    "volume": 0.125,
+    "volume": 1,
     "image": "/api/images/miladystation.avif"
   },
   {
@@ -293,7 +293,7 @@
     "name": "Milad Maker",
     "description": "Milad Maker is a NFT-TCG and PFP collection of 10,000 neochibi mad lads created for Miladies, by Miladies!",
     "chainId": 1,
-    "volume": 0.5677,
+    "volume": 1,
     "image": "/api/images/miladmaker.avif"
   },
   {
@@ -302,7 +302,7 @@
     "name": "water mililys",
     "description": "water mililys are aqueous spirits of the network pond, born out of the flux between ai, avant and fine art. mililys are heavily inspired by the spring miauras collection.",
     "chainId": 1,
-    "volume": 2.9322,
+    "volume": 6,
     "image": "/api/images/water-mililys.avif"
   },
   {
@@ -311,7 +311,7 @@
     "name": "Merikuri",
     "description": "Merikuri is a Ghiblady Maker kin collection of 125 AI generative Christmas themed pfpNFTs with inspiration from Milady, Pixelady, and other Milady inspired projects.",
     "chainId": 1,
-    "volume": 0.6329,
+    "volume": 0.8,
     "image": "/api/images/merikuri.avif"
   },
   {
@@ -329,7 +329,7 @@
     "name": "Milady Christmas Pets",
     "description": "Welcome to the home of Milady Christmas Pets on OpenSea. Discover the best items in this collection.",
     "chainId": 1,
-    "volume": 0,
+    "volume": 0.36,
     "image": "/api/images/milady-christmas-pets.avif"
   },
   {
@@ -338,7 +338,7 @@
     "name": "Strawberry Juice",
     "description": "Strawberry Juice is a Ghiblady Maker kin collection of 100 AI generative strawberry pfpNFTs with inspiration from Milady, Pixelady, and other Milady inspired projects.",
     "chainId": 1,
-    "volume": 0.8467,
+    "volume": 1,
     "image": "/api/images/strawberryjuice.avif"
   },
   {
@@ -400,12 +400,12 @@
     "openseaId": "roritamaker",
     "name": "Rorita Maker",
     "description": "Rorita Maker ロリータ neochibi aesthetic pfpNFTs. Inspired by Milady Maker",
-    "volume": 0,
+    "volume": 0.011,
     "chainId": 1,
     "image": "/api/images/roritamaker.jpeg"
   },
   {
-    "id": "Ascii Miladies",
+    "id": "ascii-milady-2",
     "openseaId": "ascii-milady-2",
     "name": "Ascii Miladies",
     "description": "ゆっくりしてね",
@@ -414,8 +414,8 @@
     "image": "/api/images/asciimiladies.png"
   },
   {
-    "id": "dollady",
-    "openseaId": "dollady",
+    "id": "dollady-1",
+    "openseaId": "dollady-1",
     "name": "DOLLADY",
     "description": "777 heavenly curated neochibi dolls.",
     "volume": 0,
@@ -436,7 +436,7 @@
     "openseaId": "radbro",
     "name": "radbro",
     "description": "Welcome to the home of radbro on OpenSea. Discover the best items in this collection.",
-    "volume": 0.0602,
+    "volume": 0.0702,
     "chainId": 137,
     "image": "/api/images/Radbro.avif"
   },
@@ -445,7 +445,7 @@
     "openseaId": "miladybitch",
     "name": "Milady, that B.I.T.C.H",
     "description": "Welcome to the home of Milady, That B.I.T.C.H. on OpenSea. Discover the best items in this collection.",
-    "volume": 125.9044,
+    "volume": 160,
     "chainId": 1,
     "image": "/api/images/Milady-That-bitch.avif"
   },
@@ -486,21 +486,12 @@
     "image": "/api/images/YonaHonoraryService.avif"
   },
   {
-    "id": "milady2",
-    "name": "Milady 2: Global Terror",
-    "openseaId": "milady-2-global-terror",
-    "description": "I need you to defeat terror right now -Milady",
-    "chainId": 1,
-    "volume": 0,
-    "image": "/api/images/milady2.png"
-  },
-  {
     "id": "oekakimaker",
     "openseaId": "oekakimaker",
     "name": "Oekaki Maker",
     "description": "Neo-chibi aesthetic enthusiast network cohesion lainpilled artisanal AI generative synthesis NFTS.",
     "chainId": 1,
-    "volume": 1.62,
+    "volume": 15,
     "image": "/api/images/oekakimaker.avif"
   },
   {
@@ -509,7 +500,7 @@
     "name": "lawbsters",
     "description": "Lawbsters seem nice but a human run by a lobster will never achieve anything without a roadmap. ",
     "chainId": 1,
-    "volume": 0,
+    "volume": 0.686,
     "image": "/api/images/lawbsters.jpeg"
   },
   {
@@ -518,7 +509,7 @@
     "name": "MiladyCola",
     "description": "The MiladyCola bottles come in multiple flavors that nod to loveable milady derivatives",
     "chainId": 1,
-    "volume": 0,
+    "volume": 0.009,
     "image": "/api/images/miladycola.jpeg"
   },
   {
@@ -531,7 +522,7 @@
     "image": "/api/images/cogawrettes.avif"
   },
   {
-    "id": "cogawrettesVSA",
+    "id": "cogawrettesatelier",
     "openseaId": "cogawrettesatelier",
     "name": "Cogawrettes: VonnegutSaves' Atelier",
     "description": "VonnegutSaves' Atelier, a side collection of a micro collection in the neo-machine aesthetic of 18th century factories. ",
@@ -549,8 +540,8 @@
     "image": "/api/images/sudo-bastard-miladys.avif"
   },
   {
-    "id": "remilio64",
-    "openseaId": "remilio64",
+    "id": "remilio64-1",
+    "openseaId": "remilio64-1",
     "name": "Remilio64",
     "description": "Welcome to the home of Remilio64 on OpenSea. Discover the best items in this collection.",
     "chainId": 1,
@@ -572,7 +563,7 @@
     "name": "Midenza Maker",
     "description": "Everytime i look at fidenza i see the eyes its in my head i love it i love it in my head everytime i love it the eyes the eyes <3",
     "chainId": 1,
-    "volume": 0,
+    "volume": 0.423,
     "image": "/api/images/midenza-maker.avif"
   },
   {
@@ -581,7 +572,7 @@
     "name": "Zlady Maker",
     "description": "Zlady Maker is a collection of 151 of the strongest fighters the universe has ever seen.",
     "chainId": 1,
-    "volume": 0,
+    "volume": 0.043,
     "image": "/api/images/zladymaker.avif"
   },
   {
@@ -590,7 +581,7 @@
     "name": "Mifairy Maker",
     "description": "Mifairy Maker is a collection of 3333 ethereal hand drawn generative pfpNFT's in a dreamy neochibi aesthetic.",
     "chainId": 1,
-    "volume": 0.025,
+    "volume": 1,
     "image": "/api/images/mifairy-maker.avif"
   },
   {
@@ -599,7 +590,7 @@
     "name": "R3DBRO",
     "description": "R3DBRO RADBRO REMILIO MILADY OFFICIAL OPENSEA RAD ZYLLAMINTING",
     "chainId": 1,
-    "volume": 0,
+    "volume": 0.32,
     "image": "/api/images/r3dbro.avif"
   },
   {
@@ -608,7 +599,7 @@
     "name": "my little devil",
     "description": "444 AI generated 3d chibi collection",
     "chainId": 1,
-    "volume": 0.0126,
+    "volume": 0.064,
     "image": "/api/images/midevil.avif"
   },
   {
@@ -617,7 +608,7 @@
     "name": "SchizoPosters",
     "description": "I HATE THE ANTICHRIST I HATE THE ANTICHRIST I HATE THE ANTICHRIST I HATE THE ANTICHRIST",
     "chainId": 1,
-    "volume": 158,
+    "volume": 1823,
     "image": "/api/images/schizoposters.avif"
   },
   {
@@ -626,7 +617,7 @@
     "name": "Very Internet Person",
     "description": "Neochibi aesthetic pixel goool icons/avatars for going online and having fun.",
     "chainId": 1,
-    "volume": 0.3005,
+    "volume": 0.5,
     "image": "/api/images/vip.png"
   },
   {
