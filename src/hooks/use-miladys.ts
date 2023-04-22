@@ -1,16 +1,14 @@
 import { useEffect, useState } from "react";
 
 export interface MiladyType {
-  id: string;
   name: string;
   openseaId: string;
   description: string;
   chainId: number;
-  image: string
+  image: string;
   volume: number;
   website?: string;
 }
-
 
 const useMiladys = () => {
   const [miladys, setMiladys] = useState<MiladyType[] | null>(null);
@@ -19,7 +17,7 @@ const useMiladys = () => {
     const res = await fetch("/api/data.json");
     const data = await res.json();
     setMiladys(data);
-  }
+  };
 
   useEffect(() => {
     getMiladys();
