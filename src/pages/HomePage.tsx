@@ -2,6 +2,7 @@ import styled from "styled-components";
 import TextArea from "../components/TextArea";
 import useMiladys from "../hooks/use-miladys";
 import Milady from "../components/Milady";
+import NavItems from "../components/NavItems";
 
 const StyledHomePage = styled.div`
   width: 100%;
@@ -41,6 +42,7 @@ const HomePage = () => {
 
   return (
     <StyledHomePage>
+      <NavItems />
       <TextArea
         header="Milady Derivatives"
         body={
