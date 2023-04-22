@@ -1,14 +1,7 @@
 [
   {
-    "openseaId": "philady",
-    "name": "Philady Maker (Milady flipped to the left)",
-    "description": "I just flipped the milady maker to the left tbh",
-    "chainId": 137,
-    "volume": 0,
-    "image": "/api/images/philady.jpg"
-  },
-  {
     "openseaId": "discount-knockoff-miladysaver-pfp-project-tbh",
+    "parent": "milady",
     "name": "Discount knockoff MiladySaver pfp project tbh",
     "description": "Discount knockoff MiladySaver pfp project tbh is a collection of 10,000 degenerated pfpNFT's in a lofichibi aesthetic inspired by a tweet.",
     "chainId": 137,
@@ -16,64 +9,72 @@
     "image": "/api/images/discount-knockoff-miladysaver-pfp-project-tbh.jpeg"
   },
   {
-    "name": "Tubby Milady Maker",
     "openseaId": "tubby-milady-maker",
+    "parent": "milady",
+    "name": "Tubby Milady Maker",
     "description": "Tubby Milady Maker is a collection of 4800 extra cute generative tubby-neochibi aesthetic inspired NFT pfp’s.",
     "chainId": 1,
-    "volume": 0.1562,
+    "volume": 0.21,
     "image": "/api/images/tubby-milady-maker.avif"
   },
   {
+    "openseaId": "mclady-maker",
+    "parent": "milady",
     "name": "McLady Maker",
     "description": "McLady Maker is a collection of 1955 neochibi pfpNFTs inspired by @MiladyMaker and @FastFoodPunks",
-    "openseaId": "mclady-maker",
     "chainId": 1,
     "volume": 0,
     "image": "/api/images/mclady-maker.jpeg"
   },
   {
-    "name": "milady aura",
     "openseaId": "miladyaura",
+    "parent": "milady",
+    "name": "milady aura",
     "description": "Deconstructive, derivative collection of 1888 milady auras",
     "chainId": 1,
     "volume": 187,
     "image": "/api/images/miladyaura.avif"
   },
   {
-    "name": "spring miaura",
     "openseaId": "spring-miaura",
+    "parent": "miladyaura",
+    "name": "spring miaura",
     "description": "Charged spirits of the network garden, a collection of 333 spring miauras",
     "chainId": 1,
     "volume": 13,
     "image": "/api/images/spring-miaura.avif"
   },
   {
-    "name": "milAIdy maker",
     "openseaId": "milaidymaker",
+    "parent": "milady",
+    "name": "milAIdy maker",
     "description": "AI + Milady. Made using disco diffusion v5.2",
     "chainId": 1,
     "volume": 16,
     "image": "/api/images/milaidymaker.avif"
   },
   {
-    "name": "Streets of Milady",
     "openseaId": "streetsofmilady",
+    "parent": "milady",
+    "name": "Streets of Milady",
     "description": "Rage in the Streets of Milady!",
     "chainId": 1,
     "volume": 16,
     "image": "/api/images/streetsofmilady.webp"
   },
   {
-    "name": "Azuki Milady",
     "openseaId": "azuki-milady",
+    "parent": "milady",
+    "name": "Azuki Milady",
     "description": "Azuki Milady is a collection of 6,666 generative avatars in a neodrip aesthetic inspired by two different sets of street style tribes.",
     "chainId": 1,
     "volume": 0.7727,
     "image": "/api/images/azuki-milady.avif"
   },
   {
-    "name": "Anti-Miladies",
     "openseaId": "anti-miladies",
+    "parent": "milady",
+    "name": "Anti-Miladies",
     "description": "STOP!! NO GROOMERS",
     "chainId": 1,
     "volume": 5,
@@ -81,6 +82,7 @@
   },
   {
     "openseaId": "pixel-miladies",
+    "parent": "milady",
     "name": "Pixel Miladies",
     "description": "Pixel Miladies",
     "chainId": 1,
@@ -89,6 +91,7 @@
   },
   {
     "openseaId": "mimories",
+    "parent": "milady",
     "name": "mimories",
     "description": "Hey :3 my mimories, all on the blockchain. please cherish them <3",
     "chainId": 1,
@@ -97,6 +100,7 @@
   },
   {
     "openseaId": "coolmiladymaker",
+    "parent": "milady",
     "name": "coolmiladymaker",
     "description": "1,300 cool Miladys",
     "chainId": 1,
@@ -105,6 +109,7 @@
   },
   {
     "openseaId": "banners-nft",
+    "parent": "milady",
     "name": "Banners NFT",
     "description": "Banners is a generative NFT collection exploring a hypercitation of early 00's digital aesthetics with content organically sourced from performative posts made within the Milady Maker community.",
     "chainId": 1,
@@ -113,6 +118,7 @@
   },
   {
     "openseaId": "boredmilady",
+    "parent": "milady",
     "name": "Bored Milady Maker",
     "description": "Bored Milady Maker is a collection of 6,911 generative pfpNFT's in a neochibi aesthetic inspired by street style tribes that infected the apes with Network Spirituality.",
     "chainId": 1,
@@ -121,6 +127,7 @@
   },
   {
     "openseaId": "notokaymiladys",
+    "parent": "milady",
     "name": "NotOkayMiladys",
     "description": "Not Okay Miladys are a collection of 3,911 generative pfpNFT’s created by mutating the bears with neochibi essence and infecting them with Network Spirituality. “Why would my bear turn into this?!” the bears cry out… The answer is simple - “it’s better”.",
     "chainId": 1,
@@ -129,6 +136,7 @@
   },
   {
     "openseaId": "cigawrettepacks",
+    "parent": "milady",
     "name": "Cigawrette Packs",
     "description": "An experimental literature project of 9999 NFTs exploring the space between PFP and utility.",
     "chainId": 1,
@@ -137,6 +145,7 @@
   },
   {
     "openseaId": "pixeladymaker",
+    "parent": "milady",
     "name": "Pixelady Maker",
     "description": "Pixelady Maker is a collection of 10000 generative pixel art pfpNFT's in a neochibi aesthetic inspired by Milady Maker.",
     "chainId": 1,
@@ -145,6 +154,7 @@
   },
   {
     "openseaId": "pixeladymaker-bc",
+    "parent": "pixeladymaker",
     "name": "Pixelady Maker BC",
     "description": "Pixelady Maker (Burning Crusade)",
     "chainId": 1,
@@ -153,6 +163,7 @@
   },
   {
     "openseaId": "pixeladymaker-wotlk",
+    "parent": "pixeladymaker",
     "name": "Pixelady Maker WOTLK",
     "description": "Pixelady Maker WOTLK is an expansion set of reanimated pixel art pfpNFT's in a winter aesthetic.",
     "chainId": 1,
@@ -161,6 +172,7 @@
   },
   {
     "openseaId": "pixeladymaker-radbro",
+    "parent": "radbro-webring",
     "name": "Pixelady Maker: Radbro",
     "description": "Pixelady Maker: Radbro is a collection of generative pixel art bros in a rad aesthetic inspired by Radbro Webring.",
     "chainId": 1,
@@ -169,6 +181,7 @@
   },
   {
     "openseaId": "milady-maker-x-lite",
+    "parent": "milady",
     "name": "Milady Maker X LITE",
     "description": "Milady Maker X is a collection of 1000 generative next-gen Avatars in a neochibi and netcore aesthetic.",
     "chainId": 1,
@@ -177,6 +190,7 @@
   },
   {
     "openseaId": "remilio-babies",
+    "parent": "milady",
     "name": "Redacted Remilio Babies",
     "description": "Redacted Remilio Babies is a collection of 10,000 neochibi pfpNFT's expanding the Milady Maker paradigm with the introduction of young J.I.T. energy and schizophrenic reactionary aesthetics.",
     "chainId": 1,
@@ -185,6 +199,7 @@
   },
   {
     "openseaId": "miladyrave",
+    "parent": "milady",
     "name": "MiladyRave",
     "description": "milady rave maker is a collection of 5,000 generative pfp nft's in a neochibi aesthetic inspired by the milady rave.",
     "chainId": 1,
@@ -193,6 +208,7 @@
   },
   {
     "openseaId": "milady-mfers",
+    "parent": "milady",
     "name": "milady mfers",
     "description": "milady mfers is is a collection of 10,000 generative mfers in a neochibi aesthetic inspired by tokyo street style tribes.",
     "chainId": 1,
@@ -201,6 +217,7 @@
   },
   {
     "openseaId": "sonoramaker",
+    "parent": "milady",
     "name": "Sonora Maker",
     "description": "Sonora Maker is a collection of 444 generative pfpNFTs in a neochibi aesthetic.",
     "chainId": 1,
@@ -209,6 +226,7 @@
   },
   {
     "openseaId": "sonora222",
+    "parent": "sonoramaker",
     "name": "Sonora, That B.I.T.C.H.",
     "description": "Sonora, That B.I.T.C.H.",
     "chainId": 1,
@@ -217,6 +235,7 @@
   },
   {
     "openseaId": "radbro-webring",
+    "parent": "milady",
     "name": "Radbro Webring",
     "description": "Radbros on chain. Just tell 'em to check the chain.",
     "chainId": 1,
@@ -225,6 +244,7 @@
   },
   {
     "openseaId": "matrix-milady",
+    "parent": "milady",
     "name": "Matrix Milady",
     "description": "Matrix Milady is a collection of 1,337 generative pfpNFT's that are generated by terraforming data processesing pipelines, to maximize neochibi cuteness.",
     "chainId": 1,
@@ -233,6 +253,7 @@
   },
   {
     "openseaId": "ghibladymaker",
+    "parent": "milady",
     "name": "Ghiblady Maker",
     "description": "Ghiblady Maker is a collection of 10,000 lovepilled AI generative pfpNFTs with inspiration from Milady, Pixelady, and other Milady inspired projects.",
     "chainId": 1,
@@ -241,6 +262,7 @@
   },
   {
     "openseaId": "misketti",
+    "parent": "milady",
     "name": "Mi'Sketti",
     "description": "Mi'sketti is a collection of generative pfpNFT's made out of spaghetti in a neochibi aesthetic inspired by Tokyo street style tribes.",
     "chainId": 1,
@@ -249,6 +271,7 @@
   },
   {
     "openseaId": "miladystation",
+    "parent": "milady",
     "name": "MiladyStation",
     "description": "MiladyStation is a retro game console with an obscure discography containing a collection of 1,212 AI generated player characters with inspiration from Milady, Cigawrettes, Pixelady, and Ghiblady.",
     "chainId": 1,
@@ -257,6 +280,7 @@
   },
   {
     "openseaId": "miladmaker",
+    "parent": "milady",
     "name": "Milad Maker",
     "description": "Milad Maker is a NFT-TCG and PFP collection of 10,000 neochibi mad lads created for Miladies, by Miladies!",
     "chainId": 1,
@@ -265,6 +289,7 @@
   },
   {
     "openseaId": "water-mililys",
+    "parent": "spring-miaura",
     "name": "water mililys",
     "description": "water mililys are aqueous spirits of the network pond, born out of the flux between ai, avant and fine art. mililys are heavily inspired by the spring miauras collection.",
     "chainId": 1,
@@ -273,6 +298,7 @@
   },
   {
     "openseaId": "merikuri",
+    "parent": "milady",
     "name": "Merikuri",
     "description": "Merikuri is a Ghiblady Maker kin collection of 125 AI generative Christmas themed pfpNFTs with inspiration from Milady, Pixelady, and other Milady inspired projects.",
     "chainId": 1,
@@ -281,6 +307,7 @@
   },
   {
     "openseaId": "milady-christmas",
+    "parent": "milady",
     "name": "Milady Christmas",
     "description": "Milady Christmas Special is a collection of 1,000 generative pfpNFT's in a neochibi aesthetic inspired by Christmas fashion.",
     "chainId": 1,
@@ -289,6 +316,7 @@
   },
   {
     "openseaId": "milady-christmas-pets",
+    "parent": "milady-christmas",
     "name": "Milady Christmas Pets",
     "description": "Welcome to the home of Milady Christmas Pets on OpenSea. Discover the best items in this collection.",
     "chainId": 1,
@@ -297,6 +325,7 @@
   },
   {
     "openseaId": "strawberryjuice",
+    "parent": "milady",
     "name": "Strawberry Juice",
     "description": "Strawberry Juice is a Ghiblady Maker kin collection of 100 AI generative strawberry pfpNFTs with inspiration from Milady, Pixelady, and other Milady inspired projects.",
     "chainId": 1,
@@ -305,6 +334,7 @@
   },
   {
     "openseaId": "custom-milady-tcg",
+    "parent": "milady",
     "name": "Custom Milady TCG",
     "description": "Welcome to the home of Custom Milady TCG on OpenSea. Discover the best items in this collection.",
     "chainId": 1,
@@ -313,6 +343,7 @@
   },
   {
     "openseaId": "basedmiladymaker",
+    "parent": "milady",
     "name": "CUSTOM MILADY MAKER V2",
     "description": "Custom Milady Maker is a secret society of 1-of-1 custom Neoチビ NFTs. We don’t do none of that generic generative stuff. Exclusively Made-to-Order. 30% profit will go to sweeping Milady floor and never selling.",
     "chainId": 1,
@@ -321,6 +352,7 @@
   },
   {
     "openseaId": "miladycolombia",
+    "parent": "milady",
     "name": "Milady Colombia",
     "description": "Milady Colombia Maker is a collection of 1000 generative pfpNFT's in a neocolombian aesthetic inspired by barrio style tribes.",
     "chainId": 1,
@@ -329,6 +361,7 @@
   },
   {
     "openseaId": "mifella",
+    "parent": "milady",
     "name": "MiFella",
     "description": "MiFella is about Milady.",
     "volume": 4.4695,
@@ -337,6 +370,7 @@
   },
   {
     "openseaId": "mccustoms",
+    "parent": "milady",
     "name": "McCustoms",
     "description": "custom 1/1 Miladys for McLady holders, on chain!",
     "volume": 0,
@@ -345,6 +379,7 @@
   },
   {
     "openseaId": "pixeladieseth",
+    "parent": "milady",
     "name": "Pixeladies.eth",
     "description": "333 Hand Crafted Pixeladies - Each Unique Named Milady Includes Equipment Class and Background",
     "volume": 0,
@@ -353,6 +388,7 @@
   },
   {
     "openseaId": "roritamaker",
+    "parent": "milady",
     "name": "Rorita Maker",
     "description": "Rorita Maker ロリータ neochibi aesthetic pfpNFTs. Inspired by Milady Maker",
     "volume": 0.011,
@@ -361,6 +397,7 @@
   },
   {
     "openseaId": "ascii-milady-2",
+    "parent": "milady",
     "name": "Ascii Miladies",
     "description": "ゆっくりしてね",
     "volume": 0,
@@ -369,6 +406,7 @@
   },
   {
     "openseaId": "dollady-1",
+    "parent": "milady",
     "name": "DOLLADY",
     "description": "777 heavenly curated neochibi dolls.",
     "volume": 0,
@@ -377,6 +415,7 @@
   },
   {
     "openseaId": "kardlady",
+    "parent": "milady",
     "name": "KARDLADY",
     "description": "FIRST KUSTOM NFT ON DEMAND 💞KARDLADY HANDRCRAFT SERIES BY KARDLADY STUDIOS 💕 KARDLADY 1000 LIMITED COLLECTION",
     "volume": 0,
@@ -385,6 +424,7 @@
   },
   {
     "openseaId": "radbro",
+    "parent": "milady",
     "name": "radbro",
     "description": "Welcome to the home of radbro on OpenSea. Discover the best items in this collection.",
     "volume": 0.0702,
@@ -393,6 +433,7 @@
   },
   {
     "openseaId": "miladybitch",
+    "parent": "milady",
     "name": "Milady, that B.I.T.C.H",
     "description": "Welcome to the home of Milady, That B.I.T.C.H. on OpenSea. Discover the best items in this collection.",
     "volume": 160,
@@ -401,6 +442,7 @@
   },
   {
     "openseaId": "rainbow-zorblady-maker",
+    "parent": "milady-rainbow-zorb",
     "name": "Rainbow Zorblady Maker",
     "description": "Zorblady",
     "volume": 0.0493,
@@ -409,6 +451,7 @@
   },
   {
     "openseaId": "milady-rainbow-zorb",
+    "parent": "milady",
     "name": "Milady Rainbow Zorb",
     "description": "5% of free is free",
     "volume": 0.019,
@@ -417,6 +460,7 @@
   },
   {
     "openseaId": "beetle-games",
+    "parent": "milady",
     "name": "BEETLE GAMES",
     "description": "BEETLE GAME. BEETLE GAME. BEETLE GAME. BEETLE GAME. BEETLE GAME.",
     "volume": 0,
@@ -425,6 +469,7 @@
   },
   {
     "openseaId": "yona-honorary-service",
+    "parent": "milady",
     "name": "Yona Honorary Service",
     "description": "1/1 hand-drawn edits by Yona!",
     "volume": 0,
@@ -433,6 +478,7 @@
   },
   {
     "openseaId": "oekakimaker",
+    "parent": "milady",
     "name": "Oekaki Maker",
     "description": "Neo-chibi aesthetic enthusiast network cohesion lainpilled artisanal AI generative synthesis NFTS.",
     "chainId": 1,
@@ -441,6 +487,7 @@
   },
   {
     "openseaId": "lawbsters",
+    "parent": "milady",
     "name": "lawbsters",
     "description": "Lawbsters seem nice but a human run by a lobster will never achieve anything without a roadmap. ",
     "chainId": 1,
@@ -449,6 +496,7 @@
   },
   {
     "openseaId": "miladycola",
+    "parent": "milady",
     "name": "MiladyCola",
     "description": "The MiladyCola bottles come in multiple flavors that nod to loveable milady derivatives",
     "chainId": 1,
@@ -457,6 +505,7 @@
   },
   {
     "openseaId": "cogawrettes",
+    "parent": "milady",
     "name": "Cogawrettes",
     "description": "18th century neo-machine aesthetic",
     "chainId": 137,
@@ -465,6 +514,7 @@
   },
   {
     "openseaId": "cogawrettesatelier",
+    "parent": "cogawrettes",
     "name": "Cogawrettes: VonnegutSaves' Atelier",
     "description": "VonnegutSaves' Atelier, a side collection of a micro collection in the neo-machine aesthetic of 18th century factories. ",
     "chainId": 137,
@@ -481,6 +531,7 @@
   },
   {
     "openseaId": "remilio64-1",
+    "parent": "milady",
     "name": "Remilio64",
     "description": "Welcome to the home of Remilio64 on OpenSea. Discover the best items in this collection.",
     "chainId": 1,
@@ -489,6 +540,7 @@
   },
   {
     "openseaId": "meowlady-maker",
+    "parent": "milady",
     "name": "Meowlady Maker",
     "description": "Meowlady Maker is a collection of generative cat pfpNFT's in a neochibi aesthetic inspired by @MILADYMAKERby",
     "chainId": 1,
@@ -497,6 +549,7 @@
   },
   {
     "openseaId": "midenza-maker",
+    "parent": "milady",
     "name": "Midenza Maker",
     "description": "Everytime i look at fidenza i see the eyes its in my head i love it i love it in my head everytime i love it the eyes the eyes <3",
     "chainId": 1,
@@ -505,6 +558,7 @@
   },
   {
     "openseaId": "zladymaker",
+    "parent": "milady",
     "name": "Zlady Maker",
     "description": "Zlady Maker is a collection of 151 of the strongest fighters the universe has ever seen.",
     "chainId": 1,
@@ -513,6 +567,7 @@
   },
   {
     "openseaId": "mifairy-maker",
+    "parent": "milady",
     "name": "Mifairy Maker",
     "description": "Mifairy Maker is a collection of 3333 ethereal hand drawn generative pfpNFT's in a dreamy neochibi aesthetic.",
     "chainId": 1,
@@ -521,6 +576,7 @@
   },
   {
     "openseaId": "r3dbro",
+    "parent": "radbro-webring",
     "name": "R3DBRO",
     "description": "R3DBRO RADBRO REMILIO MILADY OFFICIAL OPENSEA RAD ZYLLAMINTING",
     "chainId": 1,
@@ -529,6 +585,7 @@
   },
   {
     "openseaId": "midevil",
+    "parent": "milady",
     "name": "my little devil",
     "description": "444 AI generated 3d chibi collection",
     "chainId": 1,
@@ -537,6 +594,7 @@
   },
   {
     "openseaId": "schizoposters",
+    "parent": "milady",
     "name": "SchizoPosters",
     "description": "I HATE THE ANTICHRIST I HATE THE ANTICHRIST I HATE THE ANTICHRIST I HATE THE ANTICHRIST",
     "chainId": 1,
@@ -545,6 +603,7 @@
   },
   {
     "openseaId": "veryinternetperson",
+    "parent": "milady",
     "name": "Very Internet Person",
     "description": "Neochibi aesthetic pixel goool icons/avatars for going online and having fun.",
     "chainId": 1,
@@ -553,6 +612,7 @@
   },
   {
     "openseaId": "milady-aura-petz",
+    "parent": "miladyaura",
     "name": "milady aura petz",
     "description": "1888 petz for your milady aura",
     "chainId": 1,

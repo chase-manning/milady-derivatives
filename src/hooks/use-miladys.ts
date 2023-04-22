@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 
 export interface MiladyType {
-  name: string;
   openseaId: string;
+  name: string;
+  parent: string;
   description: string;
   chainId: number;
   image: string;
