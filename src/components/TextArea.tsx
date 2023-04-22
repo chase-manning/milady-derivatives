@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 const StyledTextArea = styled.div`
-  width: 65rem;  
+  width: 65rem;
 
   @media (max-width: 768px) {
     width: 100%;
   }
-`
+`;
 
 const Header = styled.div`
   width: 100%;
@@ -18,7 +18,7 @@ const Header = styled.div`
   padding: 0.5rem;
   font-size: 1.8rem;
   font-weight: 500;
-`
+`;
 
 const Body = styled.div`
   padding: 1rem 2rem;
@@ -26,7 +26,7 @@ const Body = styled.div`
   font-weight: 400;
   border: solid 1px var(--primary);
   background: white;
-`
+`;
 
 interface Props {
   header: string;

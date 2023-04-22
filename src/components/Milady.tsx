@@ -25,17 +25,17 @@ const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`
+`;
 
 const Image = styled.img`
   max-width: 100%;
   max-height: 100%;
-`
+`;
 
 const Video = styled.video`
   max-width: 100%;
   max-height: 100%;
-`
+`;
 
 const Label = styled.div`
   width: 100%;
@@ -48,7 +48,7 @@ const Label = styled.div`
   font-size: 1.8rem;
   font-weight: 500;
   text-align: center;
-`
+`;
 
 interface Props {
   milady: MiladyType;
@@ -61,10 +61,11 @@ const Milady = ({ milady }: Props) => {
   return (
     <StyledMilady href={link} target="_blank">
       <ImageContainer>
-        {
-          milady.image.endsWith(".mp4") ?
-            <Video autoPlay loop muted src={milady.image} /> : <Image src={milady.image} />
-        }
+        {milady.image.endsWith(".mp4") ? (
+          <Video autoPlay loop muted src={milady.image} />
+        ) : (
+          <Image src={milady.image} />
+        )}
       </ImageContainer>
       <Label>{milady.name}</Label>
     </StyledMilady>
