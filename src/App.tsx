@@ -2,11 +2,16 @@ import styled from "styled-components";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import HomePage from "./pages/HomePage";
+import FamilyTreePage from "./pages/FamilyTreePage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage />,
+  },
+  {
+    path: "family-tree",
+    element: <FamilyTreePage />,
   },
 ]);
 
