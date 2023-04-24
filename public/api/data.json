@@ -558,5 +558,13 @@
     "chainId": 1,
     "volume": 9.281,
     "image": "/api/images/milady-aura-petz.avif"
+  },
+  {
+    "openseaId": "heisei-milady-maker",
+    "name": "heisei milady maker !!!",
+    "description": "ɪɴsᴘɪʀᴇᴅ ʙʏ ᴛʜᴇ ᴄᴜᴛᴇsᴛ miladymaker ᴀɴᴅ ᴛʜᴇ ᴄᴜᴛᴇsᴛ ʜᴇɪsᴇɪ ʏ2ᴋ ᴄᴜʟᴛᴜʀᴇ⋆.✩₊ 💖࿐ ᴀʀᴛ ɪs ʜᴀɴᴅᴍᴀᴅᴇ ᴀɴᴅ sᴇʟᴇᴄᴛᴇᴅ ᴛʜᴇ ᴄᴜᴛᴇsᴛ˚✩💘",
+    "chainId": 1,
+    "volume": 0.0175,
+    "image": "/api/images/heisei-milady-maker.avif"
   }
 ]
