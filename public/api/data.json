@@ -566,5 +566,13 @@
     "chainId": 1,
     "volume": 0.0175,
     "image": "/api/images/heisei-milady-maker.avif"
+  },
+  {
+    "openseaId": "miloogymaker",
+    "name": "miloogy maker",
+    "description": "1436 generative, composible, on-chain SVG NFT's",
+    "chainId": 1,
+    "volume": 0,
+    "image": "/api/images/miloogymaker.svg"
   }
 ]
