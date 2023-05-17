@@ -574,5 +574,21 @@
     "chainId": 1,
     "volume": 0,
     "image": "/api/images/miloogymaker.svg"
+  },
+  {
+    "openseaId": "milady-2-global-terror",
+    "name": "Milady 2: Global Terror",
+    "description": "I need you to defeat terror right now",
+    "chainId": 1,
+    "volume": 0.08,
+    "image": "/api/images/milady-2-global-terror.png"
+  },
+  {
+    "openseaId": "banenrs-2-shadow-operative-unit",
+    "name": "Banners 2: Shadow Operative Unit",
+    "description": "I need you to Banenrs Right now",
+    "chainId": 1,
+    "volume": 0.055,
+    "image": "/api/images/banenrs-2-shadow-operative-unit.avif"
   }
 ]
