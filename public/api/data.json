@@ -1,5 +1,13 @@
 [
   {
+    "openseaId": "mosaicladymaker",
+    "name": "Mosaiclady Maker",
+    "description": "Mosaiclady Maker is a collection of 10,000 pfpNFT's of pixelated Miladys rendered in a 40x50 pixel neochibi style.",
+    "chainId": 1,
+    "volume": 0,
+    "image": "/api/images/mosaicladymaker.png"
+  },
+  {
     "openseaId": "philady",
     "name": "Philady Maker (Milady flipped to the left)",
     "description": "I just flipped the milady maker to the left tbh",
