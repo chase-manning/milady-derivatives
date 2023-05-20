@@ -590,5 +590,13 @@
     "chainId": 1,
     "volume": 0.055,
     "image": "/api/images/banenrs-2-shadow-operative-unit.avif"
+  },
+  {
+    "openseaId": "neko-maker",
+    "name": "Neko Maker",
+    "description": "these cats are CRAZY!!",
+    "chainId": 1,
+    "volume": 2.680,
+    "image": "/api/images/neko.webp"
   }
 ]
