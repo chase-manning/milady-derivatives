@@ -1,4 +1,12 @@
 [
+    {
+    "openseaId": "milady-maker-party",
+    "name": "Milady Maker Party",
+    "description": "Milady Maker Party is a collection of 5,000 generatively remixed Milady Maker NFTs. Milady Maker Party is the gamification of collective wealth creation and redistribution for the Remilia ecosystem.",
+    "chainId": 1,
+    "volume": 10,
+    "image": "/api/images/miladymakerparty.png"
+  },
   {
     "openseaId": "mosaicladymaker",
     "name": "Mosaiclady Maker",
