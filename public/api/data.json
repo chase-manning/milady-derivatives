@@ -614,5 +614,13 @@
     "chainId": 1,
     "volume": 2.680,
     "image": "/api/images/neko.webp"
+  },
+  {
+    "openseaId": "elite-maker",
+    "name": "ELITE MAKER",
+    "description": "ELITE MAKER is an angelic supercomplex. ELITE MAKER is an online treasure. ELITE MAKER is a year-long prank of love. ELITE MAKER is a cosmic convergence of minds, where the ethereal meets the tangible.",
+    "chainId": 1,
+    "volume": 47.0899,
+    "image": "/api/images/elite-maker.avif"
   }
 ]
