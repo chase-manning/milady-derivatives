@@ -4,7 +4,7 @@
     "name": "Qunktardio Maker",
     "description": "I HATE THE ANTICHRIST I HATE THE ANTICHRIST I HATE THE ANTICHRIST I HATE THE ANTICHRIST",
     "chainId": 900,
-    "volume": 6666,
+    "volume": 0.1,
     "image": "/api/images/qunktardio.jpg"
   },
   {
@@ -620,7 +620,7 @@
     "name": "Neko Maker",
     "description": "these cats are CRAZY!!",
     "chainId": 1,
-    "volume": 2.680,
+    "volume": 2.68,
     "image": "/api/images/neko.webp"
   },
   {
