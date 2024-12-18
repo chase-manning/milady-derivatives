@@ -630,5 +630,13 @@
     "chainId": 1,
     "volume": 47.0899,
     "image": "/api/images/elite-maker.avif"
+  },
+  {
+    "openseaId": "emilio",
+    "name": "Emilio",
+    "description": "Emilio is the natural response to the disintegration caused by so much division, propaganda and corruption. But first and foremost, Emilio is Argentine.",
+    "chainId": 900,
+    "volume": 13.55,
+    "image": "/api/images/emilio-orden-mundial.jpeg"
   }
 ]
