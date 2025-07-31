@@ -638,5 +638,13 @@
     "chainId": 900,
     "volume": 13.55,
     "image": "/api/images/emilio-orden-mundial.jpeg"
+  },
+  {
+    "openseaId": "pockit-milady",
+    "name": "Pockit Milady",
+    "description": "Pockit is an on-chain digital pet and fantasy console.",
+    "chainId": 1,
+    "volume": 5,
+    "image": "/api/images/pockitmilady.webp"
   }
 ]
