@@ -1,5 +1,14 @@
 [
   {
+    "openseaId": "hero-768880944",
+    "name": "bottleMilady",
+    "description": "bottleMilady is a collection of 10,000 playable, hand-modeled, high fidelity 3D Milady NFTs. Each bottle is a ticket into HeroArc's Twitter/X-integrated multiplayer Miladyverse",
+    "chainId": 1,
+    "volume": 0,
+    "image": "/api/images/bottleMilady.jpg",
+    "website": "https://heroarc.xyz"
+  },
+  {
     "openseaId": "qunktardio-maker",
     "name": "Qunktardio Maker",
     "description": "I HATE THE ANTICHRIST I HATE THE ANTICHRIST I HATE THE ANTICHRIST I HATE THE ANTICHRIST",
