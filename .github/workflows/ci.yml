@@ -1,12 +1,31 @@
-name: CI - Build and Image Validation
+name: CI - Build, Test and Image Validation
 "on":
   pull_request:
     branches:
       - main
 
 jobs:
+  data-validation:
+    name: Data Validation Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          cache: "yarn"
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Run data validation tests
+        run: yarn test --testPathPattern=data-validation.test.ts --watchAll=false --passWithNoTests
+
   build:
-    name: Build and Test
+    name: Build Application
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
