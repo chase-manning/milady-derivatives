@@ -655,5 +655,13 @@
     "chainId": 1,
     "volume": 5,
     "image": "/api/images/pockitmilady.webp"
+  },
+  {
+    "openseaId": "nochillio",
+    "name": "nochillio",
+    "description": "nochillio is a remilia inspired collection of 1337 pfpNFTs that brings autistic joy and nostalgia to the red chain. we are #NOCHILLIONAIREs.",
+    "chainId": 43114,
+    "volume": 31,
+    "image": "/api/images/nochillio.jpg"
   }
 ]
