@@ -132,7 +132,7 @@ describe("Data Validation Tests", () => {
 
   describe("Chain ID Validation", () => {
     test("should only use known chain IDs", () => {
-      const knownChainIds = [1, 137, 420, 900]; // Ethereum, Polygon, Optimism, etc.
+      const knownChainIds = [1, 137, 420, 900, 43114]; // Ethereum, Polygon, Optimism, Avalanche, etc.
 
       data.forEach((item, index) => {
         expect(knownChainIds).toContain(item.chainId);
