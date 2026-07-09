@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import useRipple from "../hooks/use-ripple";
+import { soundscape } from "../lib/soundscape";
 
 const StyledNavItems = styled.nav`
   display: flex;
@@ -62,8 +63,10 @@ const NavItems = () => {
           key={button.name}
           type="button"
           $active={location.pathname === button.path}
+          onMouseEnter={() => soundscape.blip("hover")}
           onClick={(e) => {
             ripple(e);
+            soundscape.blip("tap");
             navigate(button.path);
           }}
         >

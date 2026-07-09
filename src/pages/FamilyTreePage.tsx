@@ -5,6 +5,7 @@ import TextArea from "../components/TextArea";
 import useMiladys, { MiladyType } from "../hooks/use-miladys";
 import { CHAIN_LABELS } from "../lib/chains";
 import { getPrimaryLink } from "../lib/marketplaces";
+import { soundscape } from "../lib/soundscape";
 
 const ROOT_ID = "milady";
 const ROOT_NAME = "Milady Maker";
@@ -282,8 +283,10 @@ const FamilyTreePage = () => {
   const tree = useMemo(() => (miladys ? buildTree(miladys) : null), [miladys]);
   const [open, setOpen] = useState<Record<string, boolean>>({ milady: true });
 
-  const toggle = (id: string) =>
+  const toggle = (id: string) => {
+    soundscape.blip("tap");
     setOpen((prev) => ({ ...prev, [id]: !prev[id] }));
+  };
 
   return (
     <Layout liveUpdatedAt={liveUpdatedAt}>

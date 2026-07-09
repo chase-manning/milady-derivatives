@@ -6,6 +6,7 @@ import TextArea from "../components/TextArea";
 import useMiladys, { MiladyType } from "../hooks/use-miladys";
 import useRipple from "../hooks/use-ripple";
 import { CHAIN_FILTERS } from "../lib/chains";
+import { soundscape } from "../lib/soundscape";
 
 const Toolbar = styled.div`
   width: 100%;
@@ -196,8 +197,10 @@ const HomePage = () => {
               key={String(f.id)}
               type="button"
               $active={chain === f.id}
+              onMouseEnter={() => soundscape.blip("hover")}
               onClick={(e) => {
                 ripple(e);
+                soundscape.blip("tap");
                 setChain(f.id);
               }}
             >

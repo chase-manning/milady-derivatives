@@ -3,6 +3,7 @@ import { MiladyType } from "../hooks/use-miladys";
 import useTilt3D from "../hooks/use-tilt-3d";
 import { CHAIN_LABELS } from "../lib/chains";
 import { getMarketplaceLinks, getPrimaryLink } from "../lib/marketplaces";
+import { soundscape } from "../lib/soundscape";
 
 const TiltShell = styled.div<{ $delay: number }>`
   width: 100%;
@@ -30,7 +31,8 @@ const StyledMilady = styled.article`
 
   &:hover {
     box-shadow: var(--shadow-hover);
-    border-color: rgba(47, 77, 12, 0.38);
+    /* miladymaker.net: purple hover accent on frames */
+    border-color: rgba(106, 61, 138, 0.45);
   }
 `;
 
@@ -236,6 +238,7 @@ const Milady = ({ milady, index = 0 }: Props) => {
       ref={tilt.ref as React.RefObject<HTMLDivElement>}
       onMouseMove={tilt.onMove}
       onMouseLeave={tilt.onLeave}
+      onMouseEnter={() => soundscape.blip("hover")}
     >
       <StyledMilady>
         <ImageLink href={primary} target="_blank" rel="noopener noreferrer">

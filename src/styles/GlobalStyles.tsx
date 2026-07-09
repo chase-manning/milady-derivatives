@@ -87,19 +87,19 @@ const GlobalStyle = createGlobalStyle`
         color: inherit;
     }
 
-    ::selection {
-        background: var(--secondary);
-        color: var(--primary);
-    }
-
     body::before {
         content: "";
         position: fixed;
         inset: 0;
         pointer-events: none;
-        opacity: 0.03;
+        opacity: 0.028;
         z-index: 0;
         background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    ::selection {
+        background: #b8d9b7;
+        color: #2f4d0c;
     }
 
     #root {
