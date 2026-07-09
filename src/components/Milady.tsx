@@ -1,20 +1,9 @@
 import styled from "styled-components";
 import { MiladyType } from "../hooks/use-miladys";
+import { CHAIN_LABELS } from "../lib/chains";
+import { getMarketplaceLinks, getPrimaryLink } from "../lib/marketplaces";
 
-const CHAIN_LABELS: Record<number, string> = {
-  1: "Ethereum",
-  101: "Solana",
-  137: "Polygon",
-  420: "Optimism",
-  900: "Other",
-  2741: "Abstract",
-  8453: "Base",
-  43114: "Avalanche",
-  80094: "Berachain",
-  999: "HyperEVM",
-};
-
-const StyledMilady = styled.a`
+const StyledMilady = styled.article`
   width: 100%;
   height: 100%;
   border: 1px solid var(--border);
@@ -22,7 +11,6 @@ const StyledMilady = styled.a`
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  cursor: pointer;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -34,11 +22,11 @@ const StyledMilady = styled.a`
     box-shadow: var(--shadow-hover);
     border-color: rgba(47, 77, 12, 0.35);
   }
+`;
 
-  &:focus-visible {
-    outline: none;
-    box-shadow: var(--shadow-hover), var(--ring);
-  }
+const ImageLink = styled.a`
+  display: block;
+  width: 100%;
 `;
 
 const ImageContainer = styled.div`
@@ -87,63 +75,145 @@ const ChainBadge = styled.span`
 const Meta = styled.div`
   width: 100%;
   background: linear-gradient(180deg, var(--secondary-soft) 0%, var(--secondary) 100%);
-  color: var(--primary);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.25rem;
-  padding: 1.1rem 1rem 1.2rem;
+  gap: 0.45rem;
+  padding: 1.1rem 1rem 1.15rem;
   text-align: center;
   border-top: 1px solid var(--border);
-  min-height: 5.6rem;
+  min-height: 7.2rem;
 `;
 
-const Label = styled.div`
+const Label = styled.a`
   font-family: var(--font-display);
   font-size: 1.55rem;
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.25;
   color: var(--primary);
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
 `;
 
-const Volume = styled.div`
+const Stats = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.8rem;
+  justify-content: center;
   font-size: 1.15rem;
   font-weight: 500;
   color: var(--muted);
+`;
+
+const Stat = styled.span`
+  white-space: nowrap;
+`;
+
+const MarketRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+  margin-top: 0.15rem;
+`;
+
+const MarketPill = styled.a`
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 0.28rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid rgba(47, 77, 12, 0.2);
+  background: rgba(255, 255, 255, 0.75);
+  color: var(--primary);
+  transition: background 0.15s ease, transform 0.15s ease;
+
+  &:hover {
+    background: #fff;
+    transform: translateY(-1px);
+  }
 `;
 
 interface Props {
   milady: MiladyType;
 }
 
+const formatNum = (n: number, digits = 2): string => {
+  if (n >= 1000) return `${(n / 1000).toFixed(1)}k`;
+  if (n >= 100) return n.toFixed(0);
+  if (n >= 10) return n.toFixed(1);
+  return n.toFixed(digits);
+};
+
 const formatVolume = (volume: number): string => {
   if (volume <= 0) return "—";
-  if (volume >= 1000) return `${(volume / 1000).toFixed(1)}k vol`;
-  if (volume >= 100) return `${Math.round(volume)} vol`;
-  if (volume >= 10) return `${volume.toFixed(0)} vol`;
-  return `${volume.toFixed(2)} vol`;
+  return `${formatNum(volume)} vol`;
+};
+
+const formatFloor = (milady: MiladyType): string | null => {
+  const live = milady.live;
+  if (!live) return null;
+  const floor = live.floorNative ?? live.meFloorNative;
+  if (floor == null || Number.isNaN(floor)) return null;
+  const sym = live.nativeSymbol || "ETH";
+  return `${formatNum(floor, floor < 0.1 ? 3 : 2)} ${sym}`;
+};
+
+const formatLiveVol = (milady: MiladyType): string | null => {
+  const live = milady.live;
+  if (!live) return null;
+  if (live.volume24hUsd != null) return `$${formatNum(live.volume24hUsd, 0)} 24h`;
+  if (live.volume24hNative != null) {
+    return `${formatNum(live.volume24hNative)} ${live.nativeSymbol || ""} 24h`.trim();
+  }
+  return null;
 };
 
 const Milady = ({ milady }: Props) => {
-  let link = `https://opensea.io/collection/${milady.openseaId}`;
-  if (milady.website) link = milady.website;
+  const primary = getPrimaryLink(milady);
+  const markets = getMarketplaceLinks(milady);
   const chain = CHAIN_LABELS[milady.chainId] ?? `Chain ${milady.chainId}`;
+  const floor = formatFloor(milady);
+  const liveVol = formatLiveVol(milady);
 
   return (
-    <StyledMilady href={link} target="_blank" rel="noopener noreferrer">
-      <ImageContainer>
-        <ChainBadge>{chain}</ChainBadge>
-        {milady.image.endsWith(".mp4") ? (
-          <Video autoPlay loop muted playsInline src={milady.image} />
-        ) : (
-          <Image src={milady.image} alt={milady.name} loading="lazy" />
-        )}
-      </ImageContainer>
+    <StyledMilady>
+      <ImageLink href={primary} target="_blank" rel="noopener noreferrer">
+        <ImageContainer>
+          <ChainBadge>{chain}</ChainBadge>
+          {milady.image.endsWith(".mp4") ? (
+            <Video autoPlay loop muted playsInline src={milady.image} />
+          ) : (
+            <Image src={milady.image} alt={milady.name} loading="lazy" />
+          )}
+        </ImageContainer>
+      </ImageLink>
       <Meta>
-        <Label>{milady.name}</Label>
-        <Volume>{formatVolume(milady.volume)}</Volume>
+        <Label href={primary} target="_blank" rel="noopener noreferrer">
+          {milady.name}
+        </Label>
+        <Stats>
+          {floor && <Stat title="Live floor">◈ {floor}</Stat>}
+          {liveVol && <Stat title="24h volume">{liveVol}</Stat>}
+          {!liveVol && <Stat title="Catalog volume">{formatVolume(milady.volume)}</Stat>}
+        </Stats>
+        <MarketRow>
+          {markets.map((m) => (
+            <MarketPill
+              key={m.id + m.href}
+              href={m.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {m.label}
+            </MarketPill>
+          ))}
+        </MarketRow>
       </Meta>
     </StyledMilady>
   );

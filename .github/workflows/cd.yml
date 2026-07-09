@@ -1,5 +1,5 @@
 name: Deploy to Firebase Hosting on merge
-"on":
+on:
   push:
     branches:
       - main
@@ -7,13 +7,31 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
       - name: Installing Dependencies
-        run: yarn
+        run: npm ci --legacy-peer-deps
+
+      - name: Enrich catalog metadata
+        run: npm run enrich
+
+      - name: Fetch live floors / volumes
+        continue-on-error: true
+        env:
+          COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
+        run: npm run live-stats
+
       - name: Building App
-        run: yarn run build
+        run: npm run build
+
       - name: Install Firebase Tools
         run: npm install -g firebase-tools
-      - name: Deploying to Firebase
-        run: firebase deploy --token "${{ secrets.FIREBASE_SECRET }}"
 
+      - name: Deploying to Firebase
+        run: firebase deploy --token "${{ secrets.FIREBASE_SECRET }}" --only hosting --non-interactive
