@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 const StyledTextArea = styled.div`
-  width: 65rem;
-
-  @media (max-width: 768px) {
-    width: 100%;
-  }
+  width: min(72rem, 100%);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow);
 `;
 
 const Header = styled.div`
@@ -13,19 +15,32 @@ const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  background: var(--primary);
-  padding: 0.5rem;
-  font-size: 1.8rem;
-  font-weight: 500;
+  gap: 0.8rem;
+  color: #fff;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-soft) 100%);
+  padding: 1.2rem 1.6rem;
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+  }
 `;
 
 const Body = styled.div`
-  padding: 1rem 2rem;
-  font-size: 1.6rem;
+  padding: 1.6rem 2.2rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  border: solid 1px var(--primary);
-  background: white;
+  color: var(--muted);
+  line-height: 1.65;
+
+  @media (max-width: 768px) {
+    padding: 1.4rem 1.6rem;
+    font-size: 1.4rem;
+  }
 `;
 
 interface Props {

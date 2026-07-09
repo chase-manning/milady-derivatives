@@ -132,7 +132,19 @@ describe("Data Validation Tests", () => {
 
   describe("Chain ID Validation", () => {
     test("should only use known chain IDs", () => {
-      const knownChainIds = [1, 137, 420, 900, 43114]; // Ethereum, Polygon, Optimism, Avalanche, etc.
+      // EVM chain IDs plus 101 as a Solana marker used by this catalog
+      const knownChainIds = [
+        1, // Ethereum
+        101, // Solana (catalog convention)
+        137, // Polygon
+        420, // Optimism (legacy id used in dataset)
+        900, // Custom / nonstandard entries in dataset
+        999, // HyperEVM
+        2741, // Abstract
+        8453, // Base
+        43114, // Avalanche C-Chain
+        80094, // Berachain
+      ];
 
       data.forEach((item, index) => {
         expect(knownChainIds).toContain(item.chainId);

@@ -1,5 +1,50 @@
 [
   {
+    "openseaId": "hypio",
+    "name": "Wealthy Hypio Babies",
+    "description": "Wealthy Hypio Babies (Lucky Hypio Winners) are a cultural virus born from the Remiliasphere aiming to dominate Hyperliquid culture. 5,555 neochibi PFPs that famously flipped Milady mindshare on HL.",
+    "chainId": 8453,
+    "volume": 2100,
+    "image": "/api/images/hypio.png",
+    "website": "https://hypio.baby"
+  },
+  {
+    "openseaId": "retardio-cousins",
+    "name": "Retardio Cousins",
+    "description": "4,444 Retardio Cousins on the Solami love chain. Solana's flagship Milady/Remilio-adjacent culture collection — chaotic, meme-native, and deeply networked into CT.",
+    "chainId": 101,
+    "volume": 420,
+    "image": "/api/images/retardio-cousins.jpg",
+    "website": "https://magiceden.io/marketplace/retardio_cousins"
+  },
+  {
+    "openseaId": "dreamiliomaker-abstract",
+    "name": "Dreamilio Maker",
+    "description": "DreamilioMaker is the first Remilio derivative on Abstract. A Frutiger-Aero neoPFP cult bringing nostalgia, soul, and milady energy to the Abstract chain.",
+    "chainId": 2741,
+    "volume": 180,
+    "image": "/api/images/dreamilio-maker.png",
+    "website": "https://opensea.io/collection/dreamiliomaker-abstract"
+  },
+  {
+    "openseaId": "mibera333",
+    "name": "Mibera Maker",
+    "description": "Henlo — Mibera Maker is a collection of 10,000 generative dNFTs in a neochibi aesthetic with randomized cosmetics inspired by rave cultures. Berachain's headline Milady cousin.",
+    "chainId": 80094,
+    "volume": 350,
+    "image": "/api/images/mibera-maker.png",
+    "website": "https://opensea.io/collection/mibera333"
+  },
+  {
+    "openseaId": "kemonokaki",
+    "name": "Kemonokaki",
+    "description": "Kemonokaki is a hand-drawn pfp collection on Base inspired by kemonomimi and neo-chibi aesthetics — a cozy Remilia-sphere ambassador on the Base chain.",
+    "chainId": 8453,
+    "volume": 45,
+    "image": "/api/images/kemonokaki.png",
+    "website": "https://www.kemonokaki.net/"
+  },
+  {
     "openseaId": "hero-768880944",
     "name": "bottleMilady",
     "description": "bottleMilady is a collection of 10,000 playable, hand-modeled, high fidelity 3D Milady NFTs. Each bottle is a ticket into HeroArc's Twitter/X-integrated multiplayer Miladyverse",
