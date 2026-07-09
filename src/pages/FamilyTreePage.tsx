@@ -19,10 +19,17 @@ const TreeShell = styled.div`
 const Branch = styled.section`
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: var(--surface);
-  backdrop-filter: blur(12px);
-  box-shadow: var(--shadow);
+  background: color-mix(in srgb, #ffffff 78%, var(--secondary-soft) 22%);
+  backdrop-filter: blur(16px) saturate(1.2);
+  box-shadow: var(--shadow), inset 0 1px 0 var(--border-soft);
   overflow: hidden;
+  animation: milady-fade-up var(--dur-page) var(--ease-out) both;
+  transition: transform var(--dur-hover) var(--ease-out),
+    box-shadow var(--dur-hover) var(--ease-out);
+
+  &:hover {
+    box-shadow: var(--shadow-hover), inset 0 1px 0 var(--border-soft);
+  }
 `;
 
 const BranchHeader = styled.button`
@@ -82,11 +89,18 @@ const NodeCard = styled.a`
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);
   background: var(--surface-solid);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition: transform var(--dur-hover) var(--ease-out),
+    box-shadow var(--dur-hover) var(--ease-out),
+    border-color var(--dur-hover) var(--ease-out);
 
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow);
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: var(--shadow-hover);
+    border-color: rgba(47, 77, 12, 0.35);
+  }
+
+  &:active {
+    transform: scale(0.99);
   }
 `;
 

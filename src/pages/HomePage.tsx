@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import Milady from "../components/Milady";
 import TextArea from "../components/TextArea";
 import useMiladys, { MiladyType } from "../hooks/use-miladys";
+import useRipple from "../hooks/use-ripple";
 import { CHAIN_FILTERS } from "../lib/chains";
 
 const Toolbar = styled.div`
@@ -13,10 +14,12 @@ const Toolbar = styled.div`
   gap: 1.2rem;
   padding: 1.4rem;
   border-radius: var(--radius);
-  background: var(--surface);
+  background: color-mix(in srgb, #ffffff 78%, var(--secondary-soft) 22%);
   border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow), inset 0 1px 0 var(--border-soft);
+  backdrop-filter: blur(16px) saturate(1.2);
+  animation: milady-fade-up var(--dur-page) var(--ease-out) both;
+  animation-delay: 100ms;
 `;
 
 const SearchRow = styled.div`
@@ -67,6 +70,8 @@ const Filters = styled.div`
 `;
 
 const Chip = styled.button<{ $active: boolean }>`
+  position: relative;
+  overflow: hidden;
   padding: 0.55rem 1.1rem;
   border-radius: 999px;
   font-size: 1.25rem;
@@ -78,12 +83,42 @@ const Chip = styled.button<{ $active: boolean }>`
       ? "linear-gradient(135deg, var(--primary) 0%, var(--primary-soft) 100%)"
       : "var(--surface-solid)"};
   color: ${({ $active }) => ($active ? "#fff" : "var(--muted)")};
-  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+  transition: transform var(--dur-hover) var(--ease-out),
+    background var(--dur-hover) var(--ease-out),
+    color var(--dur-hover) var(--ease-out);
 
   &:hover {
-    transform: translateY(-1px);
+    transform: translateY(-2px);
     color: ${({ $active }) => ($active ? "#fff" : "var(--primary)")};
   }
+
+  &:active {
+    transform: scale(0.98);
+  }
+`;
+
+const LoadingGrid = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  gap: 1.8rem;
+`;
+
+const Skeleton = styled.div<{ $delay: number }>`
+  aspect-ratio: 0.82;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: linear-gradient(
+    100deg,
+    var(--secondary-soft) 20%,
+    #ffffff 40%,
+    var(--secondary-soft) 60%
+  );
+  background-size: 200% 100%;
+  animation: milady-shimmer 1.4s ease-in-out infinite,
+    milady-fade-up var(--dur-page) var(--ease-out) both;
+  animation-delay: ${({ $delay }) => `${$delay}ms`},
+    ${({ $delay }) => `${$delay}ms`};
 `;
 
 const Miladys = styled.div`
@@ -124,6 +159,7 @@ const HomePage = () => {
   const { miladys, liveUpdatedAt } = useMiladys();
   const [query, setQuery] = useState("");
   const [chain, setChain] = useState<number | "all">("all");
+  const ripple = useRipple();
 
   const filtered = useMemo(() => {
     if (!miladys) return null;
@@ -160,7 +196,10 @@ const HomePage = () => {
               key={String(f.id)}
               type="button"
               $active={chain === f.id}
-              onClick={() => setChain(f.id)}
+              onClick={(e) => {
+                ripple(e);
+                setChain(f.id);
+              }}
             >
               {f.label}
             </Chip>
@@ -168,10 +207,18 @@ const HomePage = () => {
         </Filters>
       </Toolbar>
 
+      {!filtered && (
+        <LoadingGrid aria-hidden>
+          {Array.from({ length: 8 }).map((_, i) => (
+            <Skeleton key={i} $delay={i * 40} />
+          ))}
+        </LoadingGrid>
+      )}
+
       <Miladys>
         {filtered &&
-          filtered.map((milady) => (
-            <Milady key={milady.openseaId} milady={milady} />
+          filtered.map((milady, i) => (
+            <Milady key={milady.openseaId} milady={milady} index={i} />
           ))}
       </Miladys>
 

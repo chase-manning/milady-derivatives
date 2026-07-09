@@ -5,9 +5,12 @@ const StyledTextArea = styled.div`
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--border);
-  background: var(--surface);
-  backdrop-filter: blur(12px);
-  box-shadow: var(--shadow);
+  background: color-mix(in srgb, #ffffff 78%, var(--secondary-soft) 22%);
+  backdrop-filter: blur(16px) saturate(1.2);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  box-shadow: var(--shadow), inset 0 1px 0 var(--border-soft);
+  animation: milady-fade-up var(--dur-page) var(--ease-out) both;
+  animation-delay: 80ms;
 `;
 
 const Header = styled.div`
