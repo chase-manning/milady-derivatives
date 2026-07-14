@@ -12,6 +12,7 @@
     "@types/react-dom": "^18.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.30.4",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.6",
     "typescript": "^4.4.2",
@@ -19,9 +20,15 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "prebuild": "node scripts/enrich-data.mjs",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:data": "react-scripts test --testPathPattern=data-validation.test.ts --watchAll=false --passWithNoTests",
+    "enrich": "node scripts/enrich-data.mjs",
+    "live-stats": "node scripts/fetch-live-stats.mjs",
+    "optimize-images": "node scripts/optimize-images.mjs",
+    "prepare-data": "node scripts/enrich-data.mjs && node scripts/fetch-live-stats.mjs",
+    "deploy": "npm run prepare-data && npm run build && firebase deploy --only hosting",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -43,6 +50,7 @@
     ]
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.26"
+    "@types/styled-components": "^5.1.26",
+    "sharp": "^0.35.3"
   }
 }

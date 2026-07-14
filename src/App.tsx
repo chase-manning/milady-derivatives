@@ -1,84 +1,76 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
-import Milady from "./components/Milady";
-import TextArea from "./components/TextArea";
-import useMiladys from "./hooks/use-miladys";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import AmbientField from "./components/AmbientField";
+import FilmGrain from "./components/FilmGrain";
+import ManifestoMarquee from "./components/ManifestoMarquee";
+import Preloader from "./components/Preloader";
+import SoundDock from "./components/SoundDock";
+import HomePage from "./pages/HomePage";
+import FamilyTreePage from "./pages/FamilyTreePage";
+import { soundscape } from "./lib/soundscape";
 
-const StyledApp = styled.div`
+const Shell = styled.div`
   width: 100%;
   min-height: 100vh;
-  background: var(--bg);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6rem;
+  /* room for fixed marquee */
+  padding: 5.2rem 2.4rem 6rem;
+  position: relative;
+  z-index: 1;
 
   @media (max-width: 768px) {
-    padding: 2rem;
+    padding: 4.4rem 1.4rem 5.5rem;
   }
 `;
 
-const Text = styled.div`
-  font-size: 1.6rem;
-  font-weight: 400;
-  background: white;
-`;
+const RootLayout = () => {
+  const [booting, setBooting] = useState(true);
+  const [exiting, setExiting] = useState(false);
 
-const Link = styled.a`
-  font-size: 1.6rem;
-  font-weight: 400;
-  background: white;
-  color: #0000ff;
-  text-decoration: underline;
-`;
+  useEffect(() => {
+    const min = window.setTimeout(() => setExiting(true), 1100);
+    return () => window.clearTimeout(min);
+  }, []);
 
-const Miladys = styled.div`
-  width: 100%;
-  padding: 6rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 2rem;
-
-  @media (max-width: 768px) {
-    padding: 2rem 0;
-  }
-`;
-
-function App() {
-  const miladys = useMiladys();
+  useEffect(() => {
+    if (!exiting) return;
+    soundscape.blip("open");
+    const t = window.setTimeout(() => setBooting(false), 420);
+    return () => window.clearTimeout(t);
+  }, [exiting]);
 
   return (
-    <StyledApp>
-      <TextArea
-        header="Milady Derivatives"
-        body={
-          <Text>
-            An unofficial list of Milady Derivatives maintained by the
-            community. To add or update a derivative please view the{" "}
-            <Link
-              href="https://github.com/chase-manning/milady-derivatives/blob/main/.github/CONTRIBUTING.md"
-              target="_blank"
-            >
-              contribution guide
-            </Link>
-            . Feel free to use{" "}
-            <Link
-              href="https://miladyderivatives.com/api/data.json"
-              target="_blank"
-            >
-              our open API
-            </Link>
-            .
-          </Text>
-        }
-      />
-      <Miladys>
-        {miladys &&
-          miladys.map((milady) => {
-            return <Milady key={milady.openseaId} milady={milady} />;
-          })}
-      </Miladys>
-    </StyledApp>
+    <>
+      <ManifestoMarquee />
+      <AmbientField />
+      <FilmGrain />
+      {booting && (
+        <Preloader exiting={exiting} label="loading derivatives · ゆっくり" />
+      )}
+      <Shell>
+        <Outlet />
+      </Shell>
+      <SoundDock />
+    </>
   );
+};
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      { index: true, element: <HomePage /> },
+      { path: "family-tree", element: <FamilyTreePage /> },
+    ],
+  },
+]);
+
+function App() {
+  return <RouterProvider router={router} />;
 }
 
 export default App;

@@ -1,0 +1,63 @@
+{
+  "updatedAt": "2026-07-09T05:40:10.709Z",
+  "count": 5,
+  "stats": {
+    "hypio": {
+      "floorNative": 0.089219,
+      "floorUsd": 155.11,
+      "volume24hNative": 0.205198,
+      "volume24hUsd": 356.74,
+      "nativeSymbol": "ETH",
+      "marketCapUsd": 861632,
+      "source": "coingecko"
+    },
+    "retardio-cousins": {
+      "floorNative": 1.49,
+      "floorUsd": 115.81,
+      "volume24hNative": 9,
+      "volume24hUsd": 697.07,
+      "nativeSymbol": "SOL",
+      "marketCapUsd": 514641,
+      "source": "coingecko",
+      "listedCount": 406,
+      "meFloorNative": 1.3895,
+      "sources": [
+        "coingecko",
+        "magiceden"
+      ]
+    },
+    "kemonokaki": {
+      "floorNative": 0.01848724,
+      "floorUsd": 32.11,
+      "volume24hNative": 0.41959,
+      "volume24hUsd": 728.7,
+      "nativeSymbol": "ETH",
+      "marketCapUsd": 321069,
+      "source": "coingecko"
+    },
+    "remilio-babies": {
+      "floorNative": 0.174057,
+      "floorUsd": 302.29,
+      "volume24hNative": 2.67,
+      "volume24hUsd": 4640.73,
+      "nativeSymbol": "ETH",
+      "marketCapUsd": 3022252,
+      "source": "coingecko"
+    },
+    "schizoposters": {
+      "floorNative": 0.056323,
+      "floorUsd": 97.89,
+      "volume24hNative": 0.371629,
+      "volume24hUsd": 645.86,
+      "nativeSymbol": "ETH",
+      "marketCapUsd": 543655,
+      "source": "coingecko"
+    }
+  },
+  "errors": [
+    {
+      "id": "radbro-webring",
+      "error": "Failed https://api.coingecko.com/api/v3/nfts/radbro-webring"
+    }
+  ]
+}

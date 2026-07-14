@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
 
-// Define the expected structure for each item in the data array
 interface MiladyDerivative {
   openseaId: string;
   name: string;
@@ -9,13 +8,17 @@ interface MiladyDerivative {
   chainId: number;
   volume: number;
   image: string;
+  parent?: string;
+  coingeckoId?: string;
+  magicEdenSlug?: string;
+  tensorSlug?: string;
+  website?: string;
 }
 
 describe("Data Validation Tests", () => {
   let data: MiladyDerivative[];
 
   beforeAll(() => {
-    // Read the data.json file
     const dataPath = path.join(process.cwd(), "public", "api", "data.json");
     const rawData = fs.readFileSync(dataPath, "utf-8");
     data = JSON.parse(rawData);
@@ -28,8 +31,7 @@ describe("Data Validation Tests", () => {
     });
 
     test("each item should have all required fields", () => {
-      data.forEach((item, index) => {
-        // Check that all required fields exist
+      data.forEach((item) => {
         expect(item).toHaveProperty("openseaId");
         expect(item).toHaveProperty("name");
         expect(item).toHaveProperty("description");
@@ -37,7 +39,6 @@ describe("Data Validation Tests", () => {
         expect(item).toHaveProperty("volume");
         expect(item).toHaveProperty("image");
 
-        // Check field types
         expect(typeof item.openseaId).toBe("string");
         expect(typeof item.name).toBe("string");
         expect(typeof item.description).toBe("string");
@@ -45,17 +46,14 @@ describe("Data Validation Tests", () => {
         expect(typeof item.volume).toBe("number");
         expect(typeof item.image).toBe("string");
 
-        // Check that fields are not empty
         expect(item.openseaId.trim()).not.toBe("");
         expect(item.name.trim()).not.toBe("");
         expect(item.description.trim()).not.toBe("");
         expect(item.image.trim()).not.toBe("");
 
-        // Check that volume is a valid number (can be 0)
         expect(item.volume).toBeGreaterThanOrEqual(0);
         expect(Number.isFinite(item.volume)).toBe(true);
 
-        // Check that chainId is a valid positive integer
         expect(Number.isInteger(item.chainId)).toBe(true);
         expect(item.chainId).toBeGreaterThan(0);
       });
@@ -68,8 +66,17 @@ describe("Data Validation Tests", () => {
     });
 
     test("image paths should start with /api/images/", () => {
-      data.forEach((item, index) => {
+      data.forEach((item) => {
         expect(item.image).toMatch(/^\/api\/images\//);
+      });
+    });
+
+    test("parent should be present and URL-friendly when set", () => {
+      data.forEach((item) => {
+        expect(item.parent).toBeDefined();
+        expect(typeof item.parent).toBe("string");
+        expect(item.parent!.trim()).not.toBe("");
+        expect(item.parent).toMatch(/^[a-z0-9-]+$/);
       });
     });
   });
@@ -78,21 +85,16 @@ describe("Data Validation Tests", () => {
     test("all referenced image files should exist", () => {
       const imagesDir = path.join(process.cwd(), "public", "api", "images");
 
-      data.forEach((item, index) => {
-        // Extract filename from the image path
+      data.forEach((item) => {
         const imagePath = item.image.replace("/api/images/", "");
         const fullImagePath = path.join(imagesDir, imagePath);
-
         expect(fs.existsSync(fullImagePath)).toBe(true);
       });
     });
 
     test("should have consistent image file extensions", () => {
-      data.forEach((item, index) => {
-        const imagePath = item.image;
-        const extension = path.extname(imagePath).toLowerCase();
-
-        // Check that the extension is one of the expected formats
+      data.forEach((item) => {
+        const extension = path.extname(item.image).toLowerCase();
         const validExtensions = [
           ".avif",
           ".png",
@@ -109,22 +111,21 @@ describe("Data Validation Tests", () => {
 
   describe("Data Quality Validation", () => {
     test("names should be reasonable length", () => {
-      data.forEach((item, index) => {
+      data.forEach((item) => {
         expect(item.name.length).toBeGreaterThan(0);
-        expect(item.name.length).toBeLessThan(200); // Reasonable max length
+        expect(item.name.length).toBeLessThan(200);
       });
     });
 
     test("descriptions should be reasonable length", () => {
-      data.forEach((item, index) => {
+      data.forEach((item) => {
         expect(item.description.length).toBeGreaterThan(0);
-        expect(item.description.length).toBeLessThan(1000); // Reasonable max length
+        expect(item.description.length).toBeLessThan(1000);
       });
     });
 
     test("openseaId should be URL-friendly", () => {
-      data.forEach((item, index) => {
-        // Check that openseaId contains only valid characters for URLs
+      data.forEach((item) => {
         expect(item.openseaId).toMatch(/^[a-z0-9-]+$/);
       });
     });
@@ -132,9 +133,11 @@ describe("Data Validation Tests", () => {
 
   describe("Chain ID Validation", () => {
     test("should only use known chain IDs", () => {
-      const knownChainIds = [1, 137, 420, 900, 43114]; // Ethereum, Polygon, Optimism, Avalanche, etc.
+      const knownChainIds = [
+        1, 101, 137, 420, 900, 999, 2741, 8453, 43114, 80094,
+      ];
 
-      data.forEach((item, index) => {
+      data.forEach((item) => {
         expect(knownChainIds).toContain(item.chainId);
       });
     });
@@ -142,15 +145,31 @@ describe("Data Validation Tests", () => {
 
   describe("Volume Data Validation", () => {
     test("volume should be a reasonable value", () => {
-      data.forEach((item, index) => {
+      data.forEach((item) => {
         expect(item.volume).toBeGreaterThanOrEqual(0);
-        expect(item.volume).toBeLessThan(10000); // Reasonable max volume
+        expect(item.volume).toBeLessThan(10000);
       });
     });
 
     test("should have some items with non-zero volume", () => {
       const itemsWithVolume = data.filter((item) => item.volume > 0);
       expect(itemsWithVolume.length).toBeGreaterThan(0);
+    });
+  });
+
+  describe("Live stats file", () => {
+    test("live-stats.json should be valid when present", () => {
+      const livePath = path.join(
+        process.cwd(),
+        "public",
+        "api",
+        "live-stats.json"
+      );
+      if (!fs.existsSync(livePath)) return;
+      const live = JSON.parse(fs.readFileSync(livePath, "utf-8"));
+      expect(live).toHaveProperty("updatedAt");
+      expect(live).toHaveProperty("stats");
+      expect(typeof live.stats).toBe("object");
     });
   });
 });

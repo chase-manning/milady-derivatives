@@ -1,5 +1,5 @@
 name: CI - Build, Test and Image Validation
-"on":
+on:
   pull_request:
     branches:
       - main
@@ -10,45 +10,45 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: "18"
-          cache: "yarn"
+          node-version: "20"
+          cache: "npm"
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci --legacy-peer-deps
 
       - name: Run data validation tests
-        run: yarn test --testPathPattern=data-validation.test.ts --watchAll=false --passWithNoTests
+        run: npm run test:data
 
   build:
     name: Build Application
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: "18"
-          cache: "yarn"
+          node-version: "20"
+          cache: "npm"
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci --legacy-peer-deps
 
       - name: Build application
-        run: yarn build
+        run: npm run build
 
   validate-images:
     name: Image Size Validation
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Validate image sizes
         run: bash scripts/validate-images.sh
